@@ -59,18 +59,27 @@ const StyledNav = styled.div`
   }
   @media (max-width: 1300px) {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 0rem;
     #logo {
       display: inline-block;
-      margin: 2rem;
+      margin: 1rem;
     }
     ul {
-      padding: 2rem;
+      padding: 1rem;
       justify-content: space-around;
       width: 100%;
       li {
         padding: 0;
+        margin: 0rem 1rem;
       }
+    }
+  }
+  @media (max-width: 500px) {
+    #logo {
+      font-size: 1.5rem;
+    }
+    li {
+      font-size: 1rem;
     }
   }
 `;

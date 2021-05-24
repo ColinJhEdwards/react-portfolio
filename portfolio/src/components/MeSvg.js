@@ -285,6 +285,11 @@ const StyledDiv = styled.div`
       transform: rotateZ(0deg);
     }
   }
+  @media (max-width: 1750px) {
+    svg {
+      height: 400px;
+    }
+  }
 `;
 
 export default MeSvg;

@@ -57,6 +57,11 @@ const StyledDiv = styled(motion.div)`
   span {
     margin-right: 5px;
   }
+  @media (max-width: 500px) {
+    width: 350px;
+    height: 160px;
+    margin: 1rem 1rem;
+  }
 `;
 
 const StyledA = styled.div`

@@ -79,7 +79,6 @@ const Home = () => {
 
 const StyledDiv = styled(motion.div)`
   min-height: 90vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +91,7 @@ const StyledDiv = styled(motion.div)`
     flex-direction: column;
     justify-content: space-around;
     h2 {
-      width: 70%;
+      width: 80%;
     }
     a {
       color: #142850;
@@ -111,6 +110,27 @@ const StyledDiv = styled(motion.div)`
     top: 0;
     right: 0;
     z-index: -1;
+  }
+  @media (max-width: 1750px) {
+    .wave {
+      opacity: 0.5;
+    }
+    .aboutMe h1,
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 1350px) {
+    .aboutMe {
+      align-items: center;
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        margin: auto;
+        text-align: center;
+      }
+    }
   }
 `;
 
