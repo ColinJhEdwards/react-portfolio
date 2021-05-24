@@ -26,10 +26,10 @@ const Home = () => {
         </Hide>
         <Hide>
           <motion.div variants={slider}>
-            <a href="#">
+            <a href="https://github.com/ColinJhEdwards" target="_blank">
               <i class="fab fa-github-square"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/colin-edwards" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
           </motion.div>
