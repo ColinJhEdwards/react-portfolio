@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import MyNav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+        <Footer />
       </AnimatePresence>
     </div>
   );

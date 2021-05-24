@@ -45,7 +45,7 @@ const Contact = () => {
             Redmond, Washington
           </h2>
         </div>
-        <div>
+        <div className="contact">
           <h2>
             <FontAwesomeIcon className="icon" icon={faMobileAlt} />
             360-990-9571
@@ -84,7 +84,7 @@ const StyledTitle = styled(motion.div)`
 `;
 
 const StyledContact = styled(motion.div)`
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,6 +111,11 @@ const StyledContact = styled(motion.div)`
   @media (max-width: 1500px) {
     h2 {
       font-size: 1.5rem;
+    }
+    .contact {
+      h2 {
+        font-size: 1rem;
+      }
     }
   }
 `;
