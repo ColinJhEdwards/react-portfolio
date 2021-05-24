@@ -38,6 +38,17 @@ export const svgSlide = {
   show: {
     x: "0%",
 
-    transition: { duration: 1 },
+    transition: { duration: 1, delay: 0.5 },
   },
+};
+
+export const grow = {
+  hidden: { y: "150%", opacity: 0 },
+  show: {
+    y: "0%",
+    opacity: 1,
+
+    transition: { duration: 0.5 },
+  },
+  exit: { scale: 0, transition: { duration: 0.5 } },
 };

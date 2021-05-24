@@ -1,25 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { grow } from "../animations";
 
 const ProjectCard = ({ title, description, code, href }) => {
   return (
     <StyledA>
       <a href={href} target="_blank">
-        <StyledDiv>
-          <h2>
-            <FontAwesomeIcon icon={faBook} /> {title}
-          </h2>
-          <p>{description}</p>
-          <p>{code}</p>
-        </StyledDiv>
+        <Hide>
+          <StyledDiv variants={grow}>
+            <h2>
+              <FontAwesomeIcon icon={faBook} /> {title}
+            </h2>
+            <p>{description}</p>
+            <p>
+              <span
+                style={{ color: code === "JavaScript" ? "yellow" : "orange" }}
+              >
+                <FontAwesomeIcon icon={faCircle} />
+              </span>
+              {code}
+            </p>
+          </StyledDiv>
+        </Hide>
       </a>
     </StyledA>
   );
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
   padding: 2rem;
   cursor: pointer;
@@ -43,17 +54,24 @@ const StyledDiv = styled.div`
   p {
     font-size: 0.8rem;
   }
+  span {
+    margin-right: 5px;
+  }
 `;
 
 const StyledA = styled.div`
   a {
     color: black;
     text-decoration: none;
-    transition: ease all 0.5s;
+    transition: ease all 0.2s;
     &:hover {
       color: #00909e;
     }
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default ProjectCard;

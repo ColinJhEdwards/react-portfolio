@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { ProjectData } from "../util/data";
 import ProjectCard from "../components/ProjectCard";
+import { motion } from "framer-motion";
+import { slider, pageAnimation, grow } from "../animations";
 
 const Projects = () => {
   const [data, setData] = useState(ProjectData);
   console.log(data);
   return (
-    <StyledProjects>
+    <StyledProjects
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <div className="title">
         <h2>Projects</h2>
         <hr width="60%" color="black" />
       </div>
-      <div className="projects">
+      <motion.div className="projects">
         {data.map((project) => (
           <ProjectCard
             title={project.title}
@@ -21,12 +28,12 @@ const Projects = () => {
             href={project.href}
           />
         ))}
-      </div>
+      </motion.div>
     </StyledProjects>
   );
 };
 
-const StyledProjects = styled.div`
+const StyledProjects = styled(motion.div)`
   min-height: 90vh;
   .title {
     display: flex;
@@ -40,6 +47,10 @@ const StyledProjects = styled.div`
     flex-wrap: wrap;
     justify-content: center;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default Projects;
