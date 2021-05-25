@@ -29,7 +29,10 @@ const Home = () => {
             <a href="https://github.com/ColinJhEdwards" target="_blank">
               <i class="fab fa-github-square"></i>
             </a>
-            <a href="https://www.linkedin.com/in/colin-edwards" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/colin-edwards-9a313a140/"
+              target="_blank"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </motion.div>
