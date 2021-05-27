@@ -14,10 +14,12 @@ const StyledDiv = styled.footer`
   background: #363636;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   h2 {
     font-size: 1rem;
+    margin-bottom: 0px;
   }
 `;
 
