@@ -27,8 +27,8 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-        <Footer />
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

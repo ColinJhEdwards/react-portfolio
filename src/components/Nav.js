@@ -8,7 +8,7 @@ const MyNav = () => {
   return (
     <StyledNav>
       <h1>
-        <a id="logo" href="https://github.com/ColinJhEdwards">
+        <a id="logo" href="https://github.com/ColinJhEdwards" target="_blank">
           <FontAwesomeIcon icon={faCode} />
           Colin Edwards
         </a>
