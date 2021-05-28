@@ -8,7 +8,7 @@ export const ProjectData = () => {
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
       code: "JavaScript",
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
-      repo: "https://github.com/mlcohan/team2",
+      repo: "https://github.com/mlcohan/LeesReptileEmporium",
       img: leeImg,
     },
     {
@@ -33,7 +33,7 @@ export const ProjectData = () => {
         "This application is a web-based app that will allow a user to enter a song name and artist to search for the lyrics of the song, using music based APIs.",
       code: "JavaScript",
       deploy: "https://mlcohan.github.io/team9/",
-      repo: "https://github.com/mlcohan/team9",
+      repo: "https://github.com/mlcohan/Lyricity",
     },
     {
       title: "Password For You",
