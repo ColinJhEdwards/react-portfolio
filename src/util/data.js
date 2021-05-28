@@ -7,6 +7,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/team2",
+      img: "../Images/Preview.png",
     },
     {
       title: "ToDo For Me",

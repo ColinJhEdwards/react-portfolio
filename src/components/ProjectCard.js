@@ -49,7 +49,6 @@ const StyledDiv = styled(motion.div)`
   align-items: flex-start;
   justify-content: space-around;
   background: white;
-
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
   }
