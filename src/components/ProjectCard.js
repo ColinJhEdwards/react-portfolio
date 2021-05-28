@@ -51,6 +51,7 @@ const StyledDiv = styled(motion.div)`
   background: white;
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
+    color: #00909e;
   }
   h2 {
     font-size: 1.5rem;
@@ -68,6 +69,8 @@ const StyledDiv = styled(motion.div)`
     justify-content: space-around;
     align-items: center;
     font-weight: bolder;
+  }
+  .img {
   }
   @media (max-width: 500px) {
     width: 350px;

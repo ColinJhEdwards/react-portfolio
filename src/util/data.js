@@ -1,3 +1,5 @@
+import leeImg from "../Images/Preview.png";
+
 export const ProjectData = () => {
   return [
     {
@@ -7,7 +9,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/team2",
-      img: "../Images/Preview.png",
+      img: leeImg,
     },
     {
       title: "ToDo For Me",

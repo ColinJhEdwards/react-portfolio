@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const MyNav = () => {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <StyledNav>
       <h1>
@@ -16,12 +19,28 @@ const MyNav = () => {
       <ul>
         <li>
           <Link to="/">Home</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: path === "/" ? "80%" : "0%" }}
+          ></Line>
         </li>
+
         <li>
           <Link to="/projects">Projects</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: path === "/projects" ? "80%" : "0%" }}
+          ></Line>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: path === "/contact" ? "80%" : "0%" }}
+          ></Line>
         </li>
       </ul>
     </StyledNav>
@@ -56,6 +75,7 @@ const StyledNav = styled.div`
     padding-left: 7rem;
     position: relative;
     font-size: 2rem;
+    position: relative;
   }
   @media (max-width: 1300px) {
     flex-direction: column;
@@ -82,6 +102,15 @@ const StyledNav = styled.div`
       font-size: 1rem;
     }
   }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #00909e;
+  width: 0;
+  position: absolute;
+  bottom: 4%;
+  left: 40%;
 `;
 
 export default MyNav;
