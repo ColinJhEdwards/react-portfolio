@@ -25,7 +25,8 @@ const Projects = () => {
             title={project.title}
             description={project.Description}
             code={project.code}
-            href={project.href}
+            deploy={project.deploy}
+            repo={project.repo}
           />
         ))}
       </motion.div>

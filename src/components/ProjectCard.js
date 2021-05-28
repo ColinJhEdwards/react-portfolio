@@ -5,27 +5,33 @@ import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { grow } from "../animations";
 
-const ProjectCard = ({ title, description, code, href }) => {
+const ProjectCard = ({ title, description, code, repo, deploy }) => {
   return (
     <StyledA>
-      <a href={href} target="_blank">
-        <Hide>
-          <StyledDiv variants={grow}>
-            <h2>
-              <FontAwesomeIcon icon={faBook} /> {title}
-            </h2>
-            <p>{description}</p>
-            <p>
-              <span
-                style={{ color: code === "JavaScript" ? "yellow" : "orange" }}
-              >
-                <FontAwesomeIcon icon={faCircle} />
-              </span>
-              {code}
-            </p>
-          </StyledDiv>
-        </Hide>
-      </a>
+      <Hide>
+        <StyledDiv variants={grow}>
+          <h2>
+            <FontAwesomeIcon icon={faBook} /> {title}
+          </h2>
+          <p>{description}</p>
+          <p>
+            <span
+              style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}
+            >
+              <FontAwesomeIcon icon={faCircle} />
+            </span>
+            {code}
+          </p>
+          <div className="links">
+            <a href={repo} target="_blank">
+              <p>Repository</p>
+            </a>
+            <a href={deploy} target="_blank">
+              <p>Deployed Application</p>
+            </a>
+          </div>
+        </StyledDiv>
+      </Hide>
     </StyledA>
   );
 };
@@ -33,17 +39,17 @@ const ProjectCard = ({ title, description, code, href }) => {
 const StyledDiv = styled(motion.div)`
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
   padding: 2rem;
-  cursor: pointer;
   border-radius: 10px;
   transition: all ease 0.5s;
   width: 426px;
-  height: 146px;
+  height: 180px;
   margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background: white;
+
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
   }
@@ -57,18 +63,28 @@ const StyledDiv = styled(motion.div)`
   span {
     margin-right: 5px;
   }
+  .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+  }
   @media (max-width: 500px) {
     width: 350px;
     height: 160px;
     margin: 1rem 1rem;
+  }
+  @media (max-width: 375px) {
+    height: 190px;
   }
 `;
 
 const StyledA = styled.div`
   a {
     color: black;
-    text-decoration: none;
-    transition: ease all 0.2s;
+
+    transition: ease all 0.5s;
     &:hover {
       color: #00909e;
     }
