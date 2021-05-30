@@ -22,7 +22,7 @@ const MyNav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: path === "/" ? "80%" : "0%" }}
+            animate={{ width: path === "/" ? "100%" : "0%" }}
           ></Line>
         </li>
 
@@ -31,7 +31,7 @@ const MyNav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: path === "/projects" ? "80%" : "0%" }}
+            animate={{ width: path === "/projects" ? "100%" : "0%" }}
           ></Line>
         </li>
         <li>
@@ -39,7 +39,7 @@ const MyNav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: path === "/contact" ? "80%" : "0%" }}
+            animate={{ width: path === "/contact" ? "100%" : "0%" }}
           ></Line>
         </li>
       </ul>
@@ -66,13 +66,15 @@ const StyledNav = styled.div`
   ul {
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 40rem;
   }
   #logo {
     font-size: 2rem;
     font-weight: lighter;
   }
   li {
-    padding-left: 7rem;
     position: relative;
     font-size: 2rem;
     position: relative;
@@ -110,7 +112,7 @@ const Line = styled(motion.div)`
   width: 0;
   position: absolute;
   bottom: 4%;
-  left: 40%;
+  left: 0%;
 `;
 
 export default MyNav;

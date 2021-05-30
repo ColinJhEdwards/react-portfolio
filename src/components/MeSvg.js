@@ -290,6 +290,11 @@ const StyledDiv = styled.div`
       height: 400px;
     }
   }
+  @media (max-width: 375px) {
+    svg {
+      height: 300px;
+    }
+  }
 `;
 
 export default MeSvg;

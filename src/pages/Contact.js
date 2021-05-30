@@ -1,6 +1,6 @@
 import React from "react";
 import colin from "../Images/Colin.JPG";
-import resume from "../files/Edwards_Resume.docx";
+import resume from "../files/Edwards_Resume.docx.pdf";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,7 +34,7 @@ const Contact = () => {
             <FontAwesomeIcon className="icon" icon={faUser} />
             Colin Edwards
           </h2>
-          <a href={resume}>
+          <a href={resume} target="_blank">
             <h2>
               <FontAwesomeIcon className="icon" icon={faFile} />
               Resume
