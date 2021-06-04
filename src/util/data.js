@@ -3,6 +3,15 @@ import leeImg from "../Images/Preview.png";
 export const ProjectData = () => {
   return [
     {
+      title: "Socks",
+      Description:
+        "Socks is a web-based application that allows users to save and view their current stock units.",
+      code: "React",
+      deploy: "https://socks-stocks.herokuapp.com/",
+      repo: "https://github.com/ashley-ag/Socks",
+      img: leeImg,
+    },
+    {
       title: "Lee's Reptile Emporium",
       Description:
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
@@ -34,14 +43,6 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://mlcohan.github.io/team9/",
       repo: "https://github.com/mlcohan/Lyricity",
-    },
-    {
-      title: "Password For You",
-      Description:
-        "A random password generator where you can specify the criteria, such as length, special characters, etc..",
-      code: "JavaScript",
-      deploy: "https://colinjhedwards.github.io/password-for-you/",
-      repo: "https://github.com/ColinJhEdwards/password-for-you",
     },
     {
       title: "Weather For Me",
