@@ -75,10 +75,18 @@ const StyledDiv = styled(motion.div)`
   @media (max-width: 500px) {
     width: 350px;
     height: 160px;
-    margin: 1rem 1rem;
+    margin: 2rem 1rem;
+  }
+  @media (max-width: 414px) {
+    height: 190px;
   }
   @media (max-width: 375px) {
     height: 190px;
+    margin: 2rem 1rem;
+  }
+  @media (max-width: 320px) {
+    width: 300px;
+    height: 220px;
   }
 `;
 
