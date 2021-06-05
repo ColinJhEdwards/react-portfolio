@@ -47,7 +47,7 @@ export const ProjectData = () => {
     {
       title: "Weather For Me",
       Description:
-        "A weather dashboard that allows users to search for specific cities and display the current weather along wit ha 5-day forecast.",
+        "A weather dashboard that allows users to search for specific cities and display the current weather along with a 5-day forecast.",
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/weatherForMe/",
       repo: "https://github.com/ColinJhEdwards/weatherForMe",
