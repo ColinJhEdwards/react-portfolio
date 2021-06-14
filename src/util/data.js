@@ -3,6 +3,7 @@ import leeImg from "../Images/Preview.png";
 export const ProjectData = () => {
   return [
     {
+      id: 1,
       title: "Socks",
       Description:
         "Socks is a web-based application that allows users to save and view their current stock units.",
@@ -12,6 +13,7 @@ export const ProjectData = () => {
       img: leeImg,
     },
     {
+      id: 2,
       title: "Lee's Reptile Emporium",
       Description:
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
@@ -21,6 +23,7 @@ export const ProjectData = () => {
       img: leeImg,
     },
     {
+      id: 3,
       title: "ToDo For Me",
       Description:
         "A simple todo list for creating a list of items you must comeplete with functioning local storage",
@@ -29,6 +32,7 @@ export const ProjectData = () => {
       repo: "https://github.com/ColinJhEdwards/todoforme",
     },
     {
+      id: 4,
       title: "Front End Demos",
       Description:
         "I love working with HTML, CSS, and Javascript so I created a webpage for demonstrating cool tricks you can do with these languages.",
@@ -37,6 +41,7 @@ export const ProjectData = () => {
       repo: "https://github.com/ColinJhEdwards/front-end-demos",
     },
     {
+      id: 5,
       title: "Lyricity",
       Description:
         "This application is a web-based app that will allow a user to enter a song name and artist to search for the lyrics of the song, using music based APIs.",
@@ -45,6 +50,7 @@ export const ProjectData = () => {
       repo: "https://github.com/mlcohan/Lyricity",
     },
     {
+      id: 6,
       title: "Weather For Me",
       Description:
         "A weather dashboard that allows users to search for specific cities and display the current weather along with a 5-day forecast.",
