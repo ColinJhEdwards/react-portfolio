@@ -1,6 +1,6 @@
 import React from "react";
 import colin from "../Images/Colin.JPG";
-import resume from "../files/Edwards_Resume.docx.pdf";
+import resume from "../files/Edwards_Resume.pdf";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
