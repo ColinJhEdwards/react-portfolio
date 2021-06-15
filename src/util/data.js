@@ -10,7 +10,6 @@ export const ProjectData = () => {
       code: "React",
       deploy: "https://socks-stocks.herokuapp.com/",
       repo: "https://github.com/ashley-ag/Socks",
-      img: leeImg,
     },
     {
       id: 2,

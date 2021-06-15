@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { grow } from "../animations";
+import { ProjectData } from "../util/data";
 
-const ProjectCard = ({ title, description, code, repo, deploy }) => {
+const ProjectCard = ({ title, description, code, repo, deploy, id }) => {
   return (
     <StyledA>
       <Hide>
@@ -93,7 +94,7 @@ const StyledDiv = styled(motion.div)`
 const StyledA = styled.div`
   a {
     color: black;
-
+    text-decoration: none;
     transition: ease all 0.5s;
     &:hover {
       color: #00909e;

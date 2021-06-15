@@ -12,6 +12,14 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 
 `;
 
