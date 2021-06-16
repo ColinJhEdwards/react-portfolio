@@ -83,6 +83,14 @@ const Details = styled(motion.div)`
       background: #bd0000;
     }
   }
+  @media (max-width: 414px) {
+    text-align: center;
+    padding: 2rem 1rem;
+    .mobile-img {
+      width: 225px;
+      height: 440px;
+    }
+  }
 `;
 
 export default ProjectDetails;
