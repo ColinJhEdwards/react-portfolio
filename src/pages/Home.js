@@ -135,6 +135,13 @@ const StyledDiv = styled(motion.div)`
       }
     }
   }
+  @media (max-width: 414px) {
+    .aboutMe {
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
 `;
 
 const Hide = styled.div`

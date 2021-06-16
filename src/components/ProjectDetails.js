@@ -24,6 +24,7 @@ const ProjectDetails = ({ title, description, img, mImg }) => {
           {mImg.map((image) => (
             <img className="mobile-img" src={image} alt="mobile" />
           ))}
+
           <Link to="/projects">
             <button>X</button>
           </Link>
