@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { pageAnimation } from "../animations";
+import { Link } from "react-router-dom";
 
 const ProjectDetails = ({ title, description, img, mImg }) => {
   console.log(img);
@@ -23,6 +24,9 @@ const ProjectDetails = ({ title, description, img, mImg }) => {
           {mImg.map((image) => (
             <img className="mobile-img" src={image} alt="mobile" />
           ))}
+          <Link to="/projects">
+            <button>X</button>
+          </Link>
         </Details>
       </CardShadow>
     </Section>
@@ -63,6 +67,21 @@ const Details = styled(motion.div)`
   .mobile-img {
     width: 375px;
     height: 812px;
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom-left-radius: 15px;
+    transition: all ease 0.5s;
+    &:hover {
+      color: #ffffff;
+      background: #bd0000;
+    }
   }
 `;
 
