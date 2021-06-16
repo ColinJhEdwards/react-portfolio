@@ -33,6 +33,7 @@ function App() {
                 title={project.title}
                 description={project.Description}
                 img={project.img}
+                mImg={project.mobileImg}
               />
             </Route>
           ))}

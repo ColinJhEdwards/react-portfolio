@@ -34,13 +34,8 @@ export const ProjectData = () => {
       code: "React",
       deploy: "https://socks-stocks.herokuapp.com/",
       repo: "https://github.com/ashley-ag/Socks",
-      img: [
-        socksHome,
-        socksMarket,
-        socksStocks,
-        socksMobileHome,
-        socksMobileMarket,
-      ],
+      img: [socksHome, socksMarket, socksStocks],
+      mobileImg: [socksMobileHome, socksMobileMarket],
     },
     {
       id: 2,
@@ -50,14 +45,8 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/LeesReptileEmporium",
-      img: [
-        leeHome,
-        leeBrowse,
-        leeCollection,
-        leeReviews,
-        leeMobileHome,
-        leeMobileFrog,
-      ],
+      img: [leeHome, leeBrowse, leeCollection, leeReviews],
+      mobileImg: [leeMobileHome, leeMobileFrog],
     },
     {
       id: 3,
@@ -67,7 +56,8 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/todoforme/",
       repo: "https://github.com/ColinJhEdwards/todoforme",
-      img: [todoHome, todoMobile],
+      img: [todoHome],
+      mobileImg: [todoMobile],
     },
     {
       id: 4,
@@ -78,6 +68,7 @@ export const ProjectData = () => {
       deploy: "https://colinjhedwards.github.io/front-end-demos/",
       repo: "https://github.com/ColinJhEdwards/front-end-demos",
       img: [mini3D, miniSVG, miniSlide, miniInput],
+      mobileImg: [],
     },
     {
       id: 5,
@@ -88,6 +79,7 @@ export const ProjectData = () => {
       deploy: "https://mlcohan.github.io/team9/",
       repo: "https://github.com/mlcohan/Lyricity",
       img: [lyricity],
+      mobileImg: [],
     },
     {
       id: 6,
@@ -98,6 +90,7 @@ export const ProjectData = () => {
       deploy: "https://colinjhedwards.github.io/weatherForMe/",
       repo: "https://github.com/ColinJhEdwards/weatherForMe",
       img: [weather],
+      mobileImg: [],
     },
   ];
 };
