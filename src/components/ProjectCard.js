@@ -4,25 +4,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { grow } from "../animations";
-import { ProjectData } from "../util/data";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id }) => {
   return (
     <StyledA>
       <Hide>
         <StyledDiv variants={grow}>
-          <h2>
-            <FontAwesomeIcon icon={faBook} /> {title}
-          </h2>
-          <p>{description}</p>
-          <p>
-            <span
-              style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}
-            >
-              <FontAwesomeIcon icon={faCircle} />
-            </span>
-            {code}
-          </p>
+          <Link to={`/project/${id}`}>
+            <h2>
+              <FontAwesomeIcon icon={faBook} /> {title}
+            </h2>
+            <p>{description}</p>
+            <p>
+              <span
+                style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}
+              >
+                <FontAwesomeIcon icon={faCircle} />
+              </span>
+              {code}
+            </p>
+          </Link>
           <div className="links">
             <a href={repo} target="_blank">
               <p>Repository</p>

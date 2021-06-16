@@ -1,14 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { pageAnimation } from "../animations";
 
 const ProjectDetails = ({ title, description, img }) => {
+  console.log(img);
   return (
-    <CardShadow>
+    <CardShadow
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <Details>
         <h2>{title}</h2>
         <p>{description}</p>
-        <img src={img} alt="image-of-project" />
+        {img.map((image) => (
+          <img src={image} alt="project" />
+        ))}
       </Details>
     </CardShadow>
   );
@@ -17,6 +26,9 @@ const ProjectDetails = ({ title, description, img }) => {
 const CardShadow = styled(motion.div)`
   width: 100%;
   min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.5);
 `;

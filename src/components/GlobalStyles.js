@@ -17,6 +17,7 @@ a{
     text-decoration: none;
     &:hover{
         text-decoration: none;
+        color: #00909e;
     }
 }
 

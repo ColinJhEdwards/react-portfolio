@@ -1,4 +1,28 @@
-import leeImg from "../Images/Preview.png";
+// Lee's reptile emporium images
+import leeBrowse from "../Images/projectImgs/leeBrowse.png";
+import leeCollection from "../Images/projectImgs/leeCollection.png";
+import leeHome from "../Images/projectImgs/leeHome.png";
+import leeMobileFrog from "../Images/projectImgs/leeMobileFrog.png";
+import leeMobileHome from "../Images/projectImgs/leeMobileHome.png";
+import leeReviews from "../Images/projectImgs/leeReviews.png";
+//Socks Images
+import socksHome from "../Images/projectImgs/socksHome.png";
+import socksMarket from "../Images/projectImgs/socksMarket.png";
+import socksStocks from "../Images/projectImgs/socksStocks.png";
+import socksMobileHome from "../Images/projectImgs/socksMobileHome.png";
+import socksMobileMarket from "../Images/projectImgs/socksMobileMarket.png";
+//Todo for me images
+import todoHome from "../Images/projectImgs/todoHome.png";
+import todoMobile from "../Images/projectImgs/todoMobile.png";
+//Front end Demos
+import mini3D from "../Images/projectImgs/mini3D.png";
+import miniSVG from "../Images/projectImgs/miniSVG.png";
+import miniSlide from "../Images/projectImgs/miniSlide.png";
+import miniInput from "../Images/projectImgs/miniInput.png";
+//Lyricity
+import lyricity from "../Images/projectImgs/lyricityHome.png";
+//Weather for me
+import weather from "../Images/projectImgs/weatherHome.png";
 
 export const ProjectData = () => {
   return [
@@ -10,6 +34,13 @@ export const ProjectData = () => {
       code: "React",
       deploy: "https://socks-stocks.herokuapp.com/",
       repo: "https://github.com/ashley-ag/Socks",
+      img: [
+        socksHome,
+        socksMarket,
+        socksStocks,
+        socksMobileHome,
+        socksMobileMarket,
+      ],
     },
     {
       id: 2,
@@ -19,7 +50,14 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/LeesReptileEmporium",
-      img: leeImg,
+      img: [
+        leeHome,
+        leeBrowse,
+        leeCollection,
+        leeReviews,
+        leeMobileHome,
+        leeMobileFrog,
+      ],
     },
     {
       id: 3,
@@ -29,6 +67,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/todoforme/",
       repo: "https://github.com/ColinJhEdwards/todoforme",
+      img: [todoHome, todoMobile],
     },
     {
       id: 4,
@@ -38,6 +77,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/front-end-demos/",
       repo: "https://github.com/ColinJhEdwards/front-end-demos",
+      img: [mini3D, miniSVG, miniSlide, miniInput],
     },
     {
       id: 5,
@@ -47,6 +87,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://mlcohan.github.io/team9/",
       repo: "https://github.com/mlcohan/Lyricity",
+      img: [lyricity],
     },
     {
       id: 6,
@@ -56,6 +97,7 @@ export const ProjectData = () => {
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/weatherForMe/",
       repo: "https://github.com/ColinJhEdwards/weatherForMe",
+      img: [weather],
     },
   ];
 };

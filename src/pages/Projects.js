@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
 import styled from "styled-components";
 import { ProjectData } from "../util/data";
 import ProjectCard from "../components/ProjectCard";
@@ -8,9 +7,6 @@ import { pageAnimation } from "../animations";
 
 const Projects = () => {
   const [data, setData] = useState(ProjectData);
-
-  const location = useLocation();
-  const path = location.pathname.split("/")[2];
 
   return (
     <>
@@ -26,17 +22,15 @@ const Projects = () => {
         </div>
         <motion.div className="projects">
           {data.map((project) => (
-            <Link to={`/project/${project.id}`}>
-              <ProjectCard
-                key={project.id}
-                id={project.id}
-                title={project.title}
-                description={project.Description}
-                code={project.code}
-                deploy={project.deploy}
-                repo={project.repo}
-              />
-            </Link>
+            <ProjectCard
+              key={project.id}
+              id={project.id}
+              title={project.title}
+              description={project.Description}
+              code={project.code}
+              deploy={project.deploy}
+              repo={project.repo}
+            />
           ))}
         </motion.div>
       </StyledProjects>
@@ -59,10 +53,6 @@ const StyledProjects = styled(motion.div)`
     flex-wrap: wrap;
     justify-content: center;
   }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
 `;
 
 export default Projects;
