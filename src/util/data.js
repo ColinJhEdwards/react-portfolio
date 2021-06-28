@@ -52,7 +52,7 @@ export const ProjectData = () => {
       id: 3,
       title: "ToDo For Me",
       Description:
-        "A simple todo list for creating a list of items you must comeplete with functioning local storage",
+        "A simple todo list for creating a list of items you must complete with functioning local storage",
       code: "JavaScript",
       deploy: "https://colinjhedwards.github.io/todoforme/",
       repo: "https://github.com/ColinJhEdwards/todoforme",
