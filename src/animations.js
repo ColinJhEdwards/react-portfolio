@@ -42,6 +42,15 @@ export const svgSlide = {
   },
 };
 
+export const fade = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: { duration: 1 },
+  },
+};
+
 export const grow = {
   hidden: { y: "150%", opacity: 0 },
   show: {

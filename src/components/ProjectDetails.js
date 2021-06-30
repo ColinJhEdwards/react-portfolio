@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { pageAnimation } from "../animations";
+import { pageAnimation, fade } from "../animations";
 import { Link } from "react-router-dom";
 
 const ProjectDetails = ({ title, description, img, mImg }) => {
@@ -15,10 +15,10 @@ const ProjectDetails = ({ title, description, img, mImg }) => {
         exit="exit"
       >
         <Details>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <motion.h2 variants={fade}>{title}</motion.h2>
+          <motion.p variants={fade}>{description}</motion.p>
           {img.map((image) => (
-            <img src={image} alt="project" />
+            <motion.img variants={fade} src={image} alt="project" />
           ))}
 
           {mImg.map((image) => (
@@ -60,6 +60,9 @@ const Details = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h2 {
+    font-size: 3rem;
+  }
   p {
     text-align: center;
     width: 70%;
@@ -68,6 +71,7 @@ const Details = styled(motion.div)`
     width: 100%;
     margin: 2rem 0rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
   }
   .mobile-img {
     width: 375px;

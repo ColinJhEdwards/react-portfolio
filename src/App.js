@@ -30,6 +30,7 @@ function App() {
           {data.map((project) => (
             <Route path={`/project/${project.id}`}>
               <ProjectDetails
+                key={project.id}
                 title={project.title}
                 description={project.longDesc}
                 img={project.img}
