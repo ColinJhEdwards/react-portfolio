@@ -31,7 +31,7 @@ function App() {
             <Route path={`/project/${project.id}`}>
               <ProjectDetails
                 title={project.title}
-                description={project.Description}
+                description={project.longDesc}
                 img={project.img}
                 mImg={project.mobileImg}
               />

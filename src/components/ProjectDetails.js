@@ -60,6 +60,10 @@ const Details = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  p {
+    text-align: center;
+    width: 70%;
+  }
   img {
     width: 100%;
     margin: 2rem 0rem;
