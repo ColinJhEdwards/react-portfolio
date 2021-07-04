@@ -28,8 +28,10 @@ import mini3D from "../Images/projectImgs/mini3D.png";
 import miniSVG from "../Images/projectImgs/miniSVG.png";
 import miniSlide from "../Images/projectImgs/miniSlide.png";
 import miniInput from "../Images/projectImgs/miniInput.png";
-//Lyricity
-import lyricity from "../Images/projectImgs/lyricityHome.png";
+//Aperture
+import aperHome from "../Images/projectImgs/aperHome.png";
+import aperSearch from "../Images/projectImgs/aperSearch.png";
+import aperMobile from "../Images/projectImgs/aperMobile.png";
 //Weather for me
 import weather from "../Images/projectImgs/weatherHome.png";
 
@@ -109,16 +111,16 @@ export const ProjectData = () => {
     },
     {
       id: 6,
-      title: "Lyricity",
+      title: "Aperture",
       Description:
-        "This application is a web-based app that will allow a user to enter a song name and artist to search for the lyrics of the song, using music based APIs.",
+        "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects.",
       longDesc:
-        "This application is a web-based app that will allow a user to enter a song name and artist to search for the lyrics of the song, using music based APIs.",
+        "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects. All photos are pulled from pexels api which supplies hundreds of thousands free stock photos. Vists Pexels website to contribue your photos!",
       code: "JavaScript",
-      deploy: "https://mlcohan.github.io/team9/",
-      repo: "https://github.com/mlcohan/Lyricity",
-      img: [lyricity],
-      mobileImg: [],
+      deploy: "https://colinjhedwards.github.io/Aperture/",
+      repo: "https://github.com/ColinJhEdwards/Aperture",
+      img: [aperHome, aperSearch],
+      mobileImg: [aperMobile],
     },
     {
       id: 7,
