@@ -34,11 +34,43 @@ import aperSearch from "../Images/projectImgs/aperSearch.png";
 import aperMobile from "../Images/projectImgs/aperMobile.png";
 //Weather for me
 import weather from "../Images/projectImgs/weatherHome.png";
+//Murphy's images
+import home from "../Images/projectImgs/Murphy/home.png";
+import home1 from "../Images/projectImgs/Murphy/homeDetail1.png";
+import home2 from "../Images/projectImgs/Murphy/homeDetail2.png";
+import courses from "../Images/projectImgs/Murphy/courses.png";
+import teachers from "../Images/projectImgs/Murphy/teachers.png";
+import contact1 from "../Images/projectImgs/Murphy/contact1.png";
+import contact2 from "../Images/projectImgs/Murphy/contact2.png";
+import mobileHome from "../Images/projectImgs/Murphy/mobileHome.png";
+import mobileHome2 from "../Images/projectImgs/Murphy/mobileHome2.png";
+import mobileCourses from "../Images/projectImgs/Murphy/mobileCourses.png";
+import mobileCourseDetail from "../Images/projectImgs/Murphy/mobileCourseDetail.png";
+import mobileTeachers from "../Images/projectImgs/Murphy/mobileTeachers.png";
 
 export const ProjectData = () => {
   return [
     {
       id: 1,
+      title: "Murphy's Music School",
+      Description:
+        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels.",
+      longDesc:
+        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels. The school has paved a new pathway in the industry of music education by offering lessons from experienced musicians and incorporating a performance-based education approach. Meaning the curriculum focuses on learning music concepts and applying them in a live performance.",
+      code: "React",
+      deploy: "https://murphys-music-school.herokuapp.com/",
+      repo: "https://github.com/ColinJhEdwards/murphy-music-school",
+      img: [home, home1, home2, courses, teachers, contact1, contact2],
+      mobileImg: [
+        mobileHome,
+        mobileHome2,
+        mobileCourses,
+        mobileCourseDetail,
+        mobileTeachers,
+      ],
+    },
+    {
+      id: 2,
       title: "Sweep",
       Description:
         "Sweep is an online database of information related to movies. Users are able to browse a collection of movies including popular, top rated, and movies currently playing in theaters.",
@@ -58,7 +90,7 @@ export const ProjectData = () => {
       mobileImg: [sweepMobile1, sweepMobile2],
     },
     {
-      id: 2,
+      id: 3,
       title: "Socks",
       Description:
         "Socks is a web-based application that allows users to save and view their current stock units.",
@@ -71,7 +103,7 @@ export const ProjectData = () => {
       mobileImg: [socksMobileHome, socksMobileMarket],
     },
     {
-      id: 3,
+      id: 4,
       title: "Lee's Reptile Emporium",
       Description:
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
@@ -84,7 +116,7 @@ export const ProjectData = () => {
       mobileImg: [leeMobileHome, leeMobileFrog],
     },
     {
-      id: 4,
+      id: 5,
       title: "ToDo For Me",
       Description:
         "A simple todo list for creating a list of items you must complete with functioning local storage",
@@ -97,7 +129,7 @@ export const ProjectData = () => {
       mobileImg: [todoMobile],
     },
     {
-      id: 5,
+      id: 6,
       title: "Mini Projects",
       Description:
         "I love working with HTML, CSS, and Javascript so I created a webpage for demonstrating cool tricks you can do with these languages.",
@@ -110,7 +142,7 @@ export const ProjectData = () => {
       mobileImg: [],
     },
     {
-      id: 6,
+      id: 7,
       title: "Aperture",
       Description:
         "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects.",
@@ -121,19 +153,6 @@ export const ProjectData = () => {
       repo: "https://github.com/ColinJhEdwards/Aperture",
       img: [aperHome, aperSearch],
       mobileImg: [aperMobile],
-    },
-    {
-      id: 7,
-      title: "Weather For Me",
-      Description:
-        "A weather dashboard that allows users to search for specific cities and display the current weather along with a 5-day forecast.",
-      longDesc:
-        "A weather dashboard that allows users to search for specific cities and display the current weather along with a 5-day forecast.",
-      code: "JavaScript",
-      deploy: "https://colinjhedwards.github.io/weatherForMe/",
-      repo: "https://github.com/ColinJhEdwards/weatherForMe",
-      img: [weather],
-      mobileImg: [],
     },
   ];
 };
