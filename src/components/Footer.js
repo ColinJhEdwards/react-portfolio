@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
   return (
     <StyledDiv>
-      <h2>Colin Edwards &copy; 2020</h2>
+      <h2>&copy; Colin Edwards 2021</h2>
     </StyledDiv>
   );
 };

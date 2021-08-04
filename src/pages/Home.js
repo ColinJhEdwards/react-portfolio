@@ -20,7 +20,7 @@ const Home = () => {
           <motion.h1 variants={slider}>Colin Edwards</motion.h1>
         </Hide>
         <Hide>
-          <motion.h2 variants={slider}>
+          <motion.h2 variants={slider} id="desc">
             I am currently working towards becoming a front end developer.
           </motion.h2>
         </Hide>
@@ -94,6 +94,9 @@ const StyledDiv = styled(motion.div)`
     flex-direction: column;
     justify-content: space-around;
     h2 {
+      width: 100%;
+    }
+    #desc {
       width: 80%;
     }
     a {

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { pageAnimation, fade } from "../animations";
 import { Link } from "react-router-dom";
 
-const ProjectDetails = ({ title, description, img, mImg }) => {
+const ProjectDetails = ({ title, description, img, mImg, key }) => {
   console.log(img);
   return (
     <Section>
@@ -18,11 +18,11 @@ const ProjectDetails = ({ title, description, img, mImg }) => {
           <motion.h2 variants={fade}>{title}</motion.h2>
           <motion.p variants={fade}>{description}</motion.p>
           {img.map((image) => (
-            <motion.img variants={fade} src={image} alt="project" />
+            <motion.img variants={fade} src={image} alt="project" key={title} />
           ))}
 
           {mImg.map((image) => (
-            <img className="mobile-img" src={image} alt="mobile" />
+            <img className="mobile-img" src={image} alt="mobile" key={title} />
           ))}
 
           <Link to="/projects">
@@ -95,6 +95,9 @@ const Details = styled(motion.div)`
   @media (max-width: 414px) {
     text-align: center;
     padding: 2rem 1rem;
+    p {
+      width: 100%;
+    }
     .mobile-img {
       width: 225px;
       height: 440px;
