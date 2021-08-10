@@ -86,6 +86,7 @@ const Details = styled(motion.div)`
     padding: 0.5rem 1rem;
     border: none;
     border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
     transition: all ease 0.5s;
     &:hover {
       color: #ffffff;

@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, code, repo, deploy, id }) => {
 };
 
 const StyledDiv = styled(motion.div)`
-  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 10px;
   transition: all ease 0.5s;
@@ -54,7 +54,7 @@ const StyledDiv = styled(motion.div)`
   background: white;
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
-    color: #00909e;
+    color: #07085f;
   }
   h2 {
     font-size: 1.5rem;
@@ -99,7 +99,7 @@ const StyledA = styled.div`
     text-decoration: none;
     transition: ease all 0.5s;
     &:hover {
-      color: #00909e;
+      color: #07085f;
     }
   }
 `;

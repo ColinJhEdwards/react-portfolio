@@ -8,8 +8,9 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: #dadada;
+    background: white;
     font-family: "Roboto", sans-serif;
+    color: black;
 }
 
 a{
@@ -17,7 +18,7 @@ a{
     text-decoration: none;
     &:hover{
         text-decoration: none;
-        color: #00909e;
+        color: gray;
     }
 }
 

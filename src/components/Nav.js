@@ -54,13 +54,13 @@ const StyledNav = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #142850;
+  background: white;
   a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: ease all 0.5s;
     &:hover {
-      color: #00909e;
+      color: #505050;
     }
   }
   ul {
@@ -76,7 +76,7 @@ const StyledNav = styled.div`
   }
   li {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
   }
   @media (max-width: 1300px) {
@@ -108,7 +108,7 @@ const StyledNav = styled.div`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #00909e;
+  background: #07085f;
   width: 0;
   position: absolute;
   bottom: 4%;
