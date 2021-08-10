@@ -23,6 +23,11 @@ const MeSvg = () => {
           <h2>node.js</h2>
           <h2>Bootstrap</h2>
           <h2>jQuery</h2>
+          <h2>MongoDB</h2>
+          <h2>SASS</h2>
+          <h2>Redux</h2>
+          <h2>GIT</h2>
+          <h2>Github</h2>
         </div>
       </div>
     </StyledDiv>

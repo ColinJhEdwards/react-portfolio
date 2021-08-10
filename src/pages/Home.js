@@ -67,7 +67,7 @@ const StyledDiv = styled(motion.div)`
       width: 80%;
     }
     a {
-      color: #07085f;
+      color: #1517bd;
       transition: all ease 0.5s;
       &:hover {
         color: #4a6292;

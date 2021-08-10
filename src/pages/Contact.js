@@ -99,7 +99,7 @@ const StyledContact = styled(motion.div)`
     color: black;
   }
   a {
-    color: #00909e;
+    color: #1517bd;
   }
   .image {
     img {
