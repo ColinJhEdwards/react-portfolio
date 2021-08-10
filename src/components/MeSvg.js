@@ -72,14 +72,10 @@ const StyledDiv = styled.div`
   }
 
   @media (max-width: 1750px) {
-    svg {
-      height: 400px;
-    }
   }
-  @media (max-width: 375px) {
-    svg {
-      height: 300px;
-    }
+  @media (max-width: 414px) {
+    width: 90%;
+    margin: auto;
   }
 `;
 
