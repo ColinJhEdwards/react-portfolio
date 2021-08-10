@@ -54,7 +54,7 @@ const StyledDiv = styled(motion.div)`
   background: white;
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
-    color: #07085f;
+    color: #1517bd;
   }
   h2 {
     font-size: 1.5rem;
