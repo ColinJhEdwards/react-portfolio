@@ -50,10 +50,8 @@ const Home = () => {
           <img src={colin} alt="colin" />
         </motion.div>
       </StyledDiv>
-      <StyledSkills className="skills">
-        <motion.div variants={fade} className="svg">
-          <Skills />
-        </motion.div>
+      <StyledSkills className="skills" variants={fade}>
+        <Skills />
       </StyledSkills>
     </>
   );

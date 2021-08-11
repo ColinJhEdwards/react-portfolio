@@ -46,7 +46,8 @@ const Skills = () => {
 };
 
 const StyledDiv = styled.div`
-  width: 25rem;
+  width: 90%;
+  margin: auto;
   height: 80%;
   display: flex;
   justify-content: space-around;
@@ -78,13 +79,11 @@ const StyledDiv = styled.div`
   .tech1,
   .studying {
     color: gray;
-    margin-top: 0rem;
-  }
-  .tech1 {
+    margin: 1rem 0rem;
     display: flex;
     flex-wrap: wrap;
     h2 {
-      margin: 0rem 1.5rem;
+      margin-right: 1rem;
     }
   }
 
@@ -104,6 +103,13 @@ const StyledDiv = styled.div`
     width: 90%;
     margin: auto;
     h1 {
+    }
+    .languages,
+    .tech1,
+    .studying {
+      h2 {
+        font-size: 1rem;
+      }
     }
   }
 `;
