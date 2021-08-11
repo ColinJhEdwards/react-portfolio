@@ -30,6 +30,17 @@ const MeSvg = () => {
           <h2>Github</h2>
         </div>
       </div>
+      <div className="study">
+        <div className="words word-3">
+          <h1>Studying</h1>
+        </div>
+        <div className="studying">
+          <h2>Firebase</h2>
+          <h2>Typescript</h2>
+          <h2>React</h2>
+          <h2>Algorithms</h2>
+        </div>
+      </div>
     </StyledDiv>
   );
 };
@@ -41,7 +52,8 @@ const StyledDiv = styled.div`
   justify-content: space-around;
   font-family: "Archivo Black", sans-serif;
   .lang,
-  .tech {
+  .tech,
+  .study {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -52,7 +64,7 @@ const StyledDiv = styled.div`
     h1 {
       letter-spacing: 4px;
       overflow: hidden;
-      background: linear-gradient(90deg, black, white, black);
+      background: linear-gradient(90deg, black, #1f51ff, black);
       background-repeat: no-repeat;
       background-size: 80%;
       background-clip: text;
@@ -63,7 +75,8 @@ const StyledDiv = styled.div`
     }
   }
   .languages,
-  .tech1 {
+  .tech1,
+  .studying {
     color: gray;
     margin-top: 0rem;
   }
@@ -90,6 +103,8 @@ const StyledDiv = styled.div`
   @media (max-width: 414px) {
     width: 90%;
     margin: auto;
+    h1 {
+    }
   }
 `;
 

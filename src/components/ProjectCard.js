@@ -81,15 +81,14 @@ const StyledDiv = styled(motion.div)`
     margin: 2rem 1rem;
   }
   @media (max-width: 414px) {
-    height: 190px;
+    height: 220px;
   }
   @media (max-width: 375px) {
-    height: 190px;
     margin: 2rem 1rem;
   }
   @media (max-width: 320px) {
     width: 300px;
-    height: 220px;
+    height: 240px;
   }
 `;
 
