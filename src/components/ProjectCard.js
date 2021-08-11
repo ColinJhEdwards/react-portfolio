@@ -53,7 +53,7 @@ const StyledDiv = styled(motion.div)`
   justify-content: space-around;
   background: white;
   &:hover {
-    box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 30px rgba(31, 81, 255, 1);
     color: #1f51ff;
   }
   h2 {

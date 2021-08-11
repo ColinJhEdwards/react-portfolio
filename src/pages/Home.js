@@ -1,5 +1,5 @@
 import React from "react";
-import MeSvg from "../components/MeSvg";
+import Skills from "../components/Skills";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, slider, svgSlide, fade } from "../animations";
@@ -52,7 +52,7 @@ const Home = () => {
       </StyledDiv>
       <StyledSkills className="skills">
         <motion.div variants={fade} className="svg">
-          <MeSvg />
+          <Skills />
         </motion.div>
       </StyledSkills>
     </>

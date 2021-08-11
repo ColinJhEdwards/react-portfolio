@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const MeSvg = () => {
+const Skills = () => {
   return (
     <StyledDiv>
       <div className="lang">
@@ -108,4 +108,4 @@ const StyledDiv = styled.div`
   }
 `;
 
-export default MeSvg;
+export default Skills;

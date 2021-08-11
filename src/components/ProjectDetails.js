@@ -51,10 +51,10 @@ const Details = styled(motion.div)`
   width: 80%;
   border-radius: 1rem;
   padding: 2rem 5rem;
-  background: white;
+  background: #424242;
   position: absolute;
   left: 10%;
-  color: black;
+  color: white;
   margin: 4rem 0rem;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ const Details = styled(motion.div)`
     position: absolute;
     top: 0;
     right: 0;
-    background: red;
+    background: #ff0000;
     color: black;
     padding: 0.5rem 1rem;
     border: none;
@@ -90,7 +90,6 @@ const Details = styled(motion.div)`
     transition: all ease 0.5s;
     &:hover {
       color: #ffffff;
-      background: #bd0000;
     }
   }
   @media (max-width: 414px) {
