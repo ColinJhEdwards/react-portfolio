@@ -26,7 +26,7 @@ const Home = () => {
           <Hide>
             <motion.h2 variants={slider} id="desc">
               Self taught <span>Front End Developer</span> with a certificate in
-              Fullstack Development. With a passion for design.
+              Fullstack Development. Passionate about design, coding, and music.
             </motion.h2>
           </Hide>
           <Hide>
@@ -39,6 +39,9 @@ const Home = () => {
                 target="_blank"
               >
                 <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto: colinjhedwards@gmail.com">
+                <i class="fas fa-envelope-square"></i>
               </a>
             </motion.div>
           </Hide>
