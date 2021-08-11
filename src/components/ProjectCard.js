@@ -99,7 +99,7 @@ const StyledA = styled.div`
     text-decoration: none;
     transition: ease all 0.5s;
     &:hover {
-      color: #07085f;
+      color: #1517bd;
     }
   }
 `;

@@ -36,16 +36,17 @@ const MeSvg = () => {
 
 const StyledDiv = styled.div`
   width: 25rem;
-  height: 80vh;
+  height: 80%;
+
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   font-family: "Archivo Black", sans-serif;
   .lang,
   .tech {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin: 0rem 4rem;
   }
   .words {
     margin-bottom: 2rem;
@@ -65,6 +66,7 @@ const StyledDiv = styled.div`
   .languages,
   .tech1 {
     color: gray;
+    margin-top: 3rem;
   }
 
   @keyframes animate {
@@ -76,7 +78,8 @@ const StyledDiv = styled.div`
     }
   }
 
-  @media (max-width: 1750px) {
+  @media (max-width: 1024px) {
+    flex-direction: column;
   }
   @media (max-width: 414px) {
     width: 90%;

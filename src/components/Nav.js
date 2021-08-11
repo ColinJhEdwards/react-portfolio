@@ -60,7 +60,7 @@ const StyledNav = styled.div`
     text-decoration: none;
     transition: ease all 0.5s;
     &:hover {
-      color: #505050;
+      color: #1517bd;
     }
   }
   ul {
