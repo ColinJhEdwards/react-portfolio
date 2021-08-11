@@ -18,7 +18,7 @@ const Projects = () => {
       >
         <div className="title">
           <h2>Projects</h2>
-          <hr width="60%" color="black" />
+          <hr width="60%" color="gray" />
         </div>
         <motion.div className="projects">
           {data.map((project) => (

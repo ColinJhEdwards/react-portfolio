@@ -16,14 +16,17 @@ const Home = () => {
       >
         <div className="aboutMe">
           <Hide>
-            <motion.h2 variants={slider}>Hi, I'm</motion.h2>
+            <motion.h2 variants={slider}>
+              <span>Hey! I'm-</span>
+            </motion.h2>
           </Hide>
           <Hide>
-            <motion.h1 variants={slider}>Colin Edwards</motion.h1>
+            <motion.h1 variants={slider}>Colin Edwards.</motion.h1>
           </Hide>
           <Hide>
             <motion.h2 variants={slider} id="desc">
-              I am currently working towards becoming a front end developer.
+              Self taught <span>Front End Developer</span> with a certificate in
+              Fullstack Development. With a passion for design.
             </motion.h2>
           </Hide>
           <Hide>
@@ -40,7 +43,7 @@ const Home = () => {
             </motion.div>
           </Hide>
         </div>
-        <motion.div className="me">
+        <motion.div className="me" variants={fade}>
           <img src={colin} alt="colin" />
         </motion.div>
       </StyledDiv>
@@ -61,23 +64,34 @@ const StyledDiv = styled(motion.div)`
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
+  width: 90%;
+  margin: auto;
   .aboutMe {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 60rem;
     h2,
     h1 {
       width: 100%;
     }
+    h1 {
+      font-size: 8rem;
+      color: white;
+    }
     #desc {
       width: 80%;
+      color: gray;
+    }
+    span {
+      color: #1f51ff;
     }
     a {
-      color: #1517bd;
+      color: #1f51ff;
       transition: all ease 0.5s;
       &:hover {
-        color: black;
+        color: gray;
       }
     }
     i {
@@ -86,6 +100,8 @@ const StyledDiv = styled(motion.div)`
     }
   }
   .me {
+    width: 20rem;
+    margin: 4rem 0rem;
     img {
       height: 300px;
       border-radius: 360px;

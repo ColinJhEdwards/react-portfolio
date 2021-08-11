@@ -11,7 +11,8 @@ const Footer = () => {
 
 const StyledDiv = styled.footer`
   min-height: 5vh;
-  background: #363636;
+  background: black;
+  border-top: #474040 solid 1px;
   color: white;
   display: flex;
   flex-direction: column;

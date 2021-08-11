@@ -37,7 +37,6 @@ const MeSvg = () => {
 const StyledDiv = styled.div`
   width: 25rem;
   height: 80%;
-
   display: flex;
   justify-content: space-around;
   font-family: "Archivo Black", sans-serif;
@@ -53,7 +52,7 @@ const StyledDiv = styled.div`
     h1 {
       letter-spacing: 4px;
       overflow: hidden;
-      background: linear-gradient(90deg, white, black, white);
+      background: linear-gradient(90deg, black, white, black);
       background-repeat: no-repeat;
       background-size: 80%;
       background-clip: text;
@@ -66,7 +65,14 @@ const StyledDiv = styled.div`
   .languages,
   .tech1 {
     color: gray;
-    margin-top: 3rem;
+    margin-top: 0rem;
+  }
+  .tech1 {
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      margin: 0rem 1.5rem;
+    }
   }
 
   @keyframes animate {

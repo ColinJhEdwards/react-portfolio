@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: white;
-    font-family: "Roboto", sans-serif;
-    color: black;
+    background: #000000;
+    font-family: 'Rubik', sans-serif;
+    color: white;
 }
 
 a{

@@ -54,13 +54,16 @@ const StyledNav = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: white;
+  background: black;
   a {
-    color: black;
+    color: white;
     text-decoration: none;
+    background: black;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
     transition: ease all 0.5s;
     &:hover {
-      color: #1517bd;
+      background: #1f51ff;
     }
   }
   ul {
@@ -108,7 +111,7 @@ const StyledNav = styled.div`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #1517bd;
+  background: #1f51ff;
   width: 0;
   position: absolute;
   bottom: 4%;

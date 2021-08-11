@@ -45,7 +45,7 @@ const StyledDiv = styled(motion.div)`
   border-radius: 10px;
   transition: all ease 0.5s;
   width: 426px;
-  height: 180px;
+  height: 200px;
   margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ const StyledDiv = styled(motion.div)`
   background: white;
   &:hover {
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
-    color: #1517bd;
+    color: #1f51ff;
   }
   h2 {
     font-size: 1.5rem;

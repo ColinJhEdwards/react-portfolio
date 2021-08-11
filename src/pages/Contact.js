@@ -23,7 +23,7 @@ const Contact = () => {
     >
       <StyledTitle>
         <h2>Let's Connect</h2>
-        <hr width="60%" color="black" />
+        <hr width="60%" color="gray" />
       </StyledTitle>
       <StyledContact>
         <div className="image">
@@ -96,10 +96,10 @@ const StyledContact = styled(motion.div)`
   .icon,
   i {
     margin-right: 1rem;
-    color: black;
+    color: gray;
   }
   a {
-    color: #1517bd;
+    color: #1f51ff;
   }
   .image {
     img {
