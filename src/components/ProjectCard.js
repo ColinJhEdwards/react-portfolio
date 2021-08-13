@@ -42,7 +42,6 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
 };
 
 const StyledDiv = styled(motion.div)`
-  box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
   border-radius: 10px;
   transition: all ease 0.5s;
   width: 800px;
@@ -105,8 +104,16 @@ const StyledDiv = styled(motion.div)`
 
   @media (max-width: 500px) {
     width: 350px;
-
     margin: 2rem 1rem;
+    .links {
+      p {
+        padding: 0;
+        &:hover {
+          background: none;
+          color: #1517bd;
+        }
+      }
+    }
   }
   @media (max-width: 414px) {
   }
