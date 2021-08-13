@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { fade } from "../animations";
+import { grow } from "../animations";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
     <Hide>
-      <StyledDiv variants={fade}>
+      <StyledDiv variants={grow}>
         <Hide>
           <img src={cover} alt="coverimg" />
         </Hide>

@@ -11,7 +11,7 @@ import {
   faMapMarkerAlt,
   faFile,
 } from "@fortawesome/free-solid-svg-icons";
-import { pageAnimation } from "../animations";
+import { slider2, pageAnimation } from "../animations";
 
 const Contact = () => {
   return (
@@ -25,7 +25,7 @@ const Contact = () => {
         <h2>Let's Connect</h2>
         <hr width="60%" color="gray" />
       </StyledTitle>
-      <StyledContact>
+      <StyledContact variants={slider2}>
         <div className="image">
           <img src={colin} alt="image-of-me" />
         </div>
@@ -50,10 +50,12 @@ const Contact = () => {
             <FontAwesomeIcon className="icon" icon={faMobileAlt} />
             360-990-9571
           </h2>
-          <h2>
-            <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            ColinJhEdwards@gmail.com
-          </h2>
+          <a href="mailto: colinjhedwards@gmail.com">
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faEnvelope} />
+              ColinJhEdwards@gmail.com
+            </h2>
+          </a>
           <a href="https://github.com/ColinJhEdwards" target="_blank">
             <h2>
               <i class="fab fa-github-square"></i>
@@ -100,6 +102,10 @@ const StyledContact = styled(motion.div)`
   }
   a {
     color: #1f51ff;
+    &:hover {
+      color: gray;
+      text-decoration: underline;
+    }
   }
   .image {
     img {

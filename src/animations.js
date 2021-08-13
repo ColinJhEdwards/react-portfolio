@@ -33,6 +33,16 @@ export const slider = {
   },
 };
 
+export const slider2 = {
+  hidden: { y: "20%", opacity: 0 },
+  show: {
+    y: "0%",
+    opacity: 1,
+
+    transition: { duration: 1 },
+  },
+};
+
 export const svgSlide = {
   hidden: { x: "130%" },
   show: {
@@ -52,12 +62,11 @@ export const fade = {
 };
 
 export const grow = {
-  hidden: { y: "150%", opacity: 0 },
+  hidden: { opacity: 0 },
   show: {
-    y: "0%",
     opacity: 1,
 
-    transition: { duration: 0.5 },
+    transition: { duration: 1 },
   },
   exit: { scale: 0, transition: { duration: 0.5 } },
 };
