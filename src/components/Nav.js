@@ -19,28 +19,31 @@ const MyNav = () => {
       <ul>
         <li>
           <Link to="/">Home</Link>
-          <Line
+          <motion.div
+            className="line"
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: path === "/" ? "100%" : "0%" }}
-          ></Line>
+          ></motion.div>
         </li>
 
         <li>
           <Link to="/projects">Projects</Link>
-          <Line
+          <motion.div
+            className="line"
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: path === "/projects" ? "100%" : "0%" }}
-          ></Line>
+          ></motion.div>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
-          <Line
+          <motion.div
+            className="line"
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: path === "/contact" ? "100%" : "0%" }}
-          ></Line>
+          ></motion.div>
         </li>
       </ul>
     </StyledNav>
@@ -82,6 +85,19 @@ const StyledNav = styled.div`
   li {
     font-size: 1.5rem;
     position: relative;
+    &:hover {
+      .line {
+        display: none;
+      }
+    }
+    .line {
+      height: 0.3rem;
+      background: #1f51ff;
+      width: 0;
+      position: absolute;
+      bottom: 4%;
+      left: 0%;
+    }
   }
   @media (max-width: 1300px) {
     flex-direction: column;
@@ -108,15 +124,6 @@ const StyledNav = styled.div`
       font-size: 1rem;
     }
   }
-`;
-
-const Line = styled(motion.div)`
-  height: 0.3rem;
-  background: #1f51ff;
-  width: 0;
-  position: absolute;
-  bottom: 4%;
-  left: 0%;
 `;
 
 export default MyNav;
