@@ -8,28 +8,28 @@ const ProjectDetails = ({ title, description, img, mImg, key }) => {
   console.log(img);
   return (
     <Section>
-      <CardShadow
+      <Details
         variants={pageAnimation}
         initial="hidden"
         animate="show"
         exit="exit"
       >
-        <Details>
-          <motion.h2 variants={fade}>{title}</motion.h2>
-          <motion.p variants={fade}>{description}</motion.p>
-          {img.map((image) => (
-            <motion.img variants={fade} src={image} alt="project" key={title} />
-          ))}
+        <motion.h2 variants={fade}>{title}</motion.h2>
+        <motion.p variants={fade}>{description}</motion.p>
+        {img.map((image) => (
+          <motion.img variants={fade} src={image} alt="project" key={title} />
+        ))}
 
-          {mImg.map((image) => (
-            <img className="mobile-img" src={image} alt="mobile" key={title} />
-          ))}
+        {mImg.map((image) => (
+          <img className="mobile-img" src={image} alt="mobile" key={title} />
+        ))}
 
-          <Link to="/projects">
-            <button>X</button>
-          </Link>
-        </Details>
-      </CardShadow>
+        <Link to="/projects">
+          <button title="Back">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </Link>
+      </Details>
     </Section>
   );
 };
@@ -37,29 +37,17 @@ const Section = styled.div`
   min-height: 90vh;
 `;
 
-const CardShadow = styled(motion.div)`
-  width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.5);
-`;
-
 const Details = styled(motion.div)`
   width: 80%;
   border-radius: 1rem;
   padding: 2rem 5rem;
-  background: #424242;
-  position: absolute;
-  left: 10%;
   color: white;
-  margin: 4rem 0rem;
+  margin: 4rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   h2 {
     font-size: 3rem;
   }
@@ -80,16 +68,15 @@ const Details = styled(motion.div)`
   button {
     position: absolute;
     top: 0;
-    right: 0;
-    background: #ff0000;
-    color: black;
+    left: 0;
+    background: gray;
+    color: white;
     padding: 0.5rem 1rem;
     border: none;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 360px;
     transition: all ease 0.5s;
     &:hover {
-      color: #ffffff;
+      color: black;
     }
   }
   @media (max-width: 414px) {
