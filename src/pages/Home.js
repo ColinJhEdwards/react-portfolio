@@ -110,9 +110,17 @@ const StyledDiv = styled(motion.div)`
     }
   }
   @media (max-width: 1750px) {
-    .aboutMe h1,
+    .aboutMe,
     h2 {
       font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 1422px) {
+    .me {
+      width: 15rem;
+      img {
+        height: 250px;
+      }
     }
   }
   @media (max-width: 1350px) {
@@ -127,6 +135,7 @@ const StyledDiv = styled(motion.div)`
       }
     }
   }
+
   @media (max-width: 414px) {
     .aboutMe {
       i {
