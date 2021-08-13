@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { pageAnimation, fade } from "../animations";
 import { Link } from "react-router-dom";
+import ScrollTop from "./ScrollTop";
 
 const ProjectDetails = ({ title, description, img, mImg, key }) => {
   console.log(img);
@@ -30,6 +31,7 @@ const ProjectDetails = ({ title, description, img, mImg, key }) => {
           </button>
         </Link>
       </Details>
+      <ScrollTop />
     </Section>
   );
 };

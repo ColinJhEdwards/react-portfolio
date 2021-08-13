@@ -43,16 +43,14 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
 
 const StyledDiv = styled(motion.div)`
   box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
-  /* padding: 2rem; */
   border-radius: 10px;
   transition: all ease 0.5s;
   width: 800px;
-  min-height: 700px;
+  min-height: 660px;
   margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: space-around; */
   background: #202020;
   h2,
   p {
@@ -90,20 +88,27 @@ const StyledDiv = styled(motion.div)`
     p {
       font-size: 1rem;
       text-decoration: none;
+      border-radius: 15px;
+      padding: 0rem 2rem;
       transition: ease all 0.5s;
       &:hover {
-        color: #1517bd;
+        background: #1517bd;
+        border-radius: 15px;
       }
     }
+  }
+  @media (max-width: 768px) {
+    width: 600px;
+    min-height: 500px;
+    margin: 2rem 1rem;
   }
 
   @media (max-width: 500px) {
     width: 350px;
-    height: 160px;
+
     margin: 2rem 1rem;
   }
   @media (max-width: 414px) {
-    height: 220px;
   }
   @media (max-width: 375px) {
     margin: 2rem 1rem;
