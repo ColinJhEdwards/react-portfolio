@@ -3,17 +3,20 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { grow } from "../animations";
+import { fade } from "../animations";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
     <Hide>
-      <StyledDiv variants={grow}>
+      <StyledDiv variants={fade}>
+        <Hide>
+          <img src={cover} alt="coverimg" />
+        </Hide>
         <h2>
           <FontAwesomeIcon icon={faBook} /> {title}
         </h2>
-        <img src={cover} alt="coverimg" />
+        <div className="line"></div>
         <p>{description}</p>
         <p>
           <span style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}>
@@ -40,21 +43,17 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
 
 const StyledDiv = styled(motion.div)`
   box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
-  padding: 2rem;
+  /* padding: 2rem; */
   border-radius: 10px;
   transition: all ease 0.5s;
   width: 800px;
-  min-height: 615px;
+  min-height: 700px;
   margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
-  background: #4b4a4a;
-  &:hover {
-    box-shadow: 0px 0px 30px rgba(31, 81, 255, 1);
-    color: #1f51ff;
-  }
+  /* justify-content: space-around; */
+  background: #202020;
   h2,
   p {
     color: white;
@@ -64,15 +63,23 @@ const StyledDiv = styled(motion.div)`
   h2 {
     font-size: 1.5rem;
   }
+  .line {
+    width: 95%;
+    height: 2px;
+    background: gray;
+    margin: 0rem auto;
+  }
   img {
     width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0;
   }
   p {
     font-size: 0.8rem;
   }
   span {
     margin-right: 5px;
-    justify-self: flex-start;
   }
   .links {
     width: 100%;
