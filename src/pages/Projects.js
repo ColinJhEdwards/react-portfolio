@@ -30,6 +30,7 @@ const Projects = () => {
               code={project.code}
               deploy={project.deploy}
               repo={project.repo}
+              cover={project.img[0]}
             />
           ))}
         </motion.div>
