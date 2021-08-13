@@ -65,6 +65,7 @@ const StyledNav = styled.div`
     transition: ease all 0.5s;
     &:hover {
       background: #1f51ff;
+      color: white;
     }
   }
   ul {
@@ -79,7 +80,6 @@ const StyledNav = styled.div`
     font-weight: lighter;
   }
   li {
-    position: relative;
     font-size: 1.5rem;
     position: relative;
   }

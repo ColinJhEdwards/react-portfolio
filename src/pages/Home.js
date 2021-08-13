@@ -60,7 +60,7 @@ const Home = () => {
 const StyledDiv = styled(motion.div)`
   min-height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
