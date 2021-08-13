@@ -26,7 +26,8 @@ const Home = () => {
           <Hide>
             <motion.h2 variants={slider} id="desc">
               Self taught <span>Front End Developer</span> with a certificate in
-              Fullstack Development. Passionate about design, coding, and music.
+              Fullstack Development. Passionate about front end development,
+              design, and music.
             </motion.h2>
           </Hide>
           <Hide>
