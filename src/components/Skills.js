@@ -51,7 +51,7 @@ const StyledDiv = styled.div`
   height: 80%;
   display: flex;
   justify-content: space-around;
-  font-family: "Archivo Black", sans-serif;
+  /* font-family: "Archivo Black", sans-serif; */
   .lang,
   .tech,
   .study {
