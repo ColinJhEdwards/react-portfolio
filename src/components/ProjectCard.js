@@ -88,10 +88,12 @@ const StyledDiv = styled(motion.div)`
       font-size: 1rem;
       text-decoration: none;
       border-radius: 15px;
-      padding: 0rem 2rem;
+      padding: 0.5rem 2rem;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      background: #1517bd;
       transition: ease all 0.5s;
       &:hover {
-        background: #1517bd;
+        background: #3336f8;
         border-radius: 15px;
       }
     }
