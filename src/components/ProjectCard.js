@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
           <FontAwesomeIcon icon={faBook} /> {title}
         </h2>
         <div className="line"></div>
-        <p>{description}</p>
+        <p id="desc">{description}</p>
         <p>
           <span style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}>
             <FontAwesomeIcon icon={faCircle} />
@@ -51,6 +51,9 @@ const StyledDiv = styled(motion.div)`
   flex-direction: column;
   align-items: flex-start;
   background: #202020;
+  #desc {
+    height: 38px;
+  }
   h2,
   p {
     color: white;
@@ -88,7 +91,7 @@ const StyledDiv = styled(motion.div)`
     p {
       font-size: 1rem;
       text-decoration: none;
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 0.5rem 2rem;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
       background: #1517bd;
@@ -107,6 +110,9 @@ const StyledDiv = styled(motion.div)`
   @media (max-width: 500px) {
     width: 350px;
     margin: 2rem 1rem;
+    #desc {
+      height: 100%;
+    }
     .links {
       p {
         padding: 0.5rem 0.5rem;
