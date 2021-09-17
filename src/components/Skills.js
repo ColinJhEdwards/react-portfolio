@@ -35,7 +35,7 @@ const Skills = () => {
           <h1>Studying</h1>
         </div>
         <div className="studying">
-          <h2>Firebase</h2>
+          <h2>GraphQl</h2>
           <h2>Typescript</h2>
           <h2>React</h2>
           <h2>Algorithms</h2>
