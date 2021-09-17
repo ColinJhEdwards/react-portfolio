@@ -84,6 +84,7 @@ const StyledDiv = styled(motion.div)`
     justify-content: space-around;
     align-items: center;
     font-weight: bolder;
+    flex-wrap: wrap;
     p {
       font-size: 1rem;
       text-decoration: none;
@@ -94,7 +95,6 @@ const StyledDiv = styled(motion.div)`
       transition: ease all 0.5s;
       &:hover {
         background: #3336f8;
-        border-radius: 15px;
       }
     }
   }
@@ -109,7 +109,7 @@ const StyledDiv = styled(motion.div)`
     margin: 2rem 1rem;
     .links {
       p {
-        padding: 0;
+        padding: 0.5rem 0.5rem;
         &:hover {
           background: none;
           color: #1517bd;
