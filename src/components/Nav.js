@@ -56,7 +56,7 @@ const StyledNav = styled.div`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1rem 3rem;
   background: black;
   border-bottom: #474040 solid 1px;
   a {

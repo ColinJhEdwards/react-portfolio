@@ -131,6 +131,9 @@ const StyledDiv = styled(motion.div)`
   @media (max-width: 320px) {
     width: 300px;
     height: 240px;
+    #desc {
+      height: 70px;
+    }
   }
 `;
 
