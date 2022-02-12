@@ -17,7 +17,7 @@ const Home = () => {
         <div className="aboutMe">
           <Hide>
             <motion.h2 variants={slider}>
-              <span>Hey! I'm-</span>
+              <span>Hey! I'm</span>
             </motion.h2>
           </Hide>
           <Hide>
