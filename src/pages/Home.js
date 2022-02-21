@@ -109,6 +109,10 @@ const StyledDiv = styled(motion.div)`
       height: 300px;
       border-radius: 360px;
       box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+      transition: all ease 0.5s;
+      &:hover {
+        transform: scale(1.2) rotate(5deg);
+      }
     }
   }
   @media (max-width: 1750px) {
