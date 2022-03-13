@@ -27,8 +27,7 @@ const Home = () => {
             <motion.h2 variants={slider} id="desc">
               Self taught <span>Front End Developer</span> with a certificate in
               Fullstack Development. Passionate about front end development,
-              design, and music. Currently pursuing a bachelors in computer
-              science.
+              design, and music.
             </motion.h2>
           </Hide>
           <Hide>
