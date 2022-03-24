@@ -18,8 +18,10 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
         </h2>
         <div className="line"></div>
         <p id="desc">{description}</p>
-        <p>
-          <span style={{ color: code === "JavaScript" ? "yellow" : "#129dc7" }}>
+        <p className="techUsed">
+          <span
+            style={{ color: code[0] === "JavaScript" ? "yellow" : "#129dc7" }}
+          >
             <FontAwesomeIcon icon={faCircle} />
           </span>
           {code}
@@ -74,6 +76,9 @@ const StyledDiv = styled(motion.div)`
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin: 0;
+  }
+  .techUsed {
+    color: #b8b8b8;
   }
   p {
     font-size: 0.8rem;

@@ -66,7 +66,13 @@ export const ProjectData = () => {
         "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
       longDesc:
         "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Started as a way to help raise funds for the nonprofit Ruta Verde that focuses on Sustainable Development projects including the building of Community Forests in North America and creating sustainable food solutions in Peru. The Inca were honorable people that valued their surrounding environments at the core of their belief systems, and we hope to honor this ideology by creating a business that focuses on caring for the planet, not just profits.",
-      code: ["React"],
+      code: [
+        "React ",
+        "- Google Maps API ",
+        "- bootstrap ",
+        "- framer motion ",
+        "- styled components",
+      ],
       deploy: "https://www.incawheels.com/",
       repo: "https://github.com/ColinJhEdwards/incawheels",
       img: [incaHome, incaVan, incaDest],
@@ -79,7 +85,13 @@ export const ProjectData = () => {
         "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels.",
       longDesc:
         "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels. The school has paved a new pathway in the industry of music education by offering lessons from experienced musicians and incorporating a performance-based education approach. Meaning the curriculum focuses on learning music concepts and applying them in a live performance.",
-      code: ["React"],
+      code: [
+        "React ",
+        "- material ui ",
+        "- bootstrap ",
+        "- framer motion ",
+        "- styled components",
+      ],
       deploy: "https://murphys-music-school.herokuapp.com/",
       repo: "https://github.com/ColinJhEdwards/murphy-music-school",
       img: [home, home1, home2, courses, teachers, contact1, contact2],
@@ -98,7 +110,14 @@ export const ProjectData = () => {
         "Sweep is an online database of information related to movies. Users are able to browse a collection of movies including popular, top rated, and movies currently playing in theaters.",
       longDesc:
         "Sweep is an online database of information related to movies. Users are able to browse a collection of movies including popular, top rated, and movies currently playing in theaters. Users are also able to search for specific movies and view a variety of information such as the movies trailer, release date, description, actors, and more.",
-      code: ["React"],
+      code: [
+        "React ",
+        "- redux ",
+        "- axios ",
+        "- bootstrap ",
+        "- lazy load image",
+        "- styled components",
+      ],
       deploy: "https://sweep-movies.herokuapp.com/",
       repo: "https://github.com/ColinJhEdwards/Sweep",
       img: [
@@ -118,7 +137,13 @@ export const ProjectData = () => {
         "Socks is a web-based application that allows users to save and view their current stock units.",
       longDesc:
         "Socks is a web-based application that allows a user to sign into their account, log their current stock units and cryptocurrency shares. Socks is a great choice for new and experienced investors alike. With an auto-populating, personalized dashboard showing infographics depicting the current value of your personalized market standings, this app brings simple viewings to your ever-so complicated investment portfolio. With a combination of rise in diversity of the stock trading market and an overall leaning preference to keep track of financial data in an easy-to-use application on your smart phone, Socks has never come at a better time. At Socks, our promise to raise the bar on UI will give anyone the opportunity to understand where their investments land at just one glance. Create an account and start logging to find out for yourself!",
-      code: ["React"],
+      code: [
+        "React ",
+        "- Firebase ",
+        "- MongoDB ",
+        "- styled components ",
+        "- bootstrap ",
+      ],
       deploy: "https://socks-stocks.herokuapp.com/",
       repo: "https://github.com/ashley-ag/Socks",
       img: [socksHome, socksMarket, socksStocks],
@@ -157,7 +182,7 @@ export const ProjectData = () => {
         "A basic template for a professional photographers personal portfolio.",
       longDesc:
         "A basic template for a professional photographers personal portfolio.",
-      code: ["Javascript"],
+      code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/photographer-portfolio/",
       repo: "https://github.com/ColinJhEdwards/photographer-portfolio",
       img: [photoHome, photoAbout, photoGallery, photoContact],
