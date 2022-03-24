@@ -47,11 +47,31 @@ import mobileHome2 from "../Images/projectImgs/Murphy/mobileHome2.png";
 import mobileCourses from "../Images/projectImgs/Murphy/mobileCourses.png";
 import mobileCourseDetail from "../Images/projectImgs/Murphy/mobileCourseDetail.png";
 import mobileTeachers from "../Images/projectImgs/Murphy/mobileTeachers.png";
+// Inca images
+import incaHome from "../Images/projectImgs/Inca/home.png";
+import incaVan from "../Images/projectImgs/Inca/theVan.png";
+import incaDest from "../Images/projectImgs/Inca/destinations.png";
+import incaMobHome from "../Images/projectImgs/Inca/mobileHome.png";
+import incaMobileVan from "../Images/projectImgs/Inca/mobileVan.png";
+import incaMobileDest from "../Images/projectImgs/Inca/mobileDestination.png";
 
 export const ProjectData = () => {
   return [
     {
       id: 1,
+      title: "Inca Wheels",
+      Description:
+        "Inca Wheels is an indigenous owned outdoor receational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
+      longDesc:
+        "Inca Wheels is an indigenous owned outdoor receational vehicle rental company based in the Pacific Northwest. Started as a way to help raise funds for the nonprofit Ruta Verde that focuses on Sustainable Development projects including the building of Community Forests in North America and creating sustainable food solutions in Peru. The Inca were honorable people that valued their surrounding environments at the core of their belief systems, and we hope to honor this ideology by creating a business that focuses on caring for the planet, not just profits.",
+      code: "React",
+      deploy: "https://www.incawheels.com/",
+      repo: "https://github.com/ColinJhEdwards/incawheels",
+      img: [incaHome, incaVan, incaDest],
+      mobileImg: [incaMobHome, incaMobileVan, incaMobileDest],
+    },
+    {
+      id: 2,
       title: "Murphy's Music School",
       Description:
         "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels.",
@@ -70,7 +90,7 @@ export const ProjectData = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Sweep",
       Description:
         "Sweep is an online database of information related to movies. Users are able to browse a collection of movies including popular, top rated, and movies currently playing in theaters.",
@@ -90,7 +110,7 @@ export const ProjectData = () => {
       mobileImg: [sweepMobile1, sweepMobile2],
     },
     {
-      id: 3,
+      id: 4,
       title: "Socks",
       Description:
         "Socks is a web-based application that allows users to save and view their current stock units.",
@@ -103,7 +123,7 @@ export const ProjectData = () => {
       mobileImg: [socksMobileHome, socksMobileMarket],
     },
     {
-      id: 4,
+      id: 5,
       title: "Lee's Reptile Emporium",
       Description:
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
@@ -116,7 +136,7 @@ export const ProjectData = () => {
       mobileImg: [leeMobileHome, leeMobileFrog],
     },
     {
-      id: 5,
+      id: 6,
       title: "ToDo For Me",
       Description:
         "A simple todo list for creating a list of items you must complete with functioning local storage",
@@ -129,7 +149,7 @@ export const ProjectData = () => {
       mobileImg: [todoMobile],
     },
     {
-      id: 6,
+      id: 7,
       title: "Mini Projects",
       Description:
         "I love working with HTML, CSS, and Javascript so I created a webpage for demonstrating cool tricks you can do with these languages.",
@@ -142,7 +162,7 @@ export const ProjectData = () => {
       mobileImg: [],
     },
     {
-      id: 7,
+      id: 8,
       title: "Aperture",
       Description:
         "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects.",
