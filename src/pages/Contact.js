@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="image">
           <img src={colin} alt="image-of-me" />
         </div>
-        <div>
+        <div className="info">
           <h2>
             <FontAwesomeIcon className="icon" icon={faUser} />
             Colin Edwards
@@ -46,10 +46,6 @@ const Contact = () => {
           </h2>
         </div>
         <div className="contact">
-          <h2>
-            <FontAwesomeIcon className="icon" icon={faMobileAlt} />
-            360-990-9571
-          </h2>
           <a href="mailto: colinjhedwards@gmail.com">
             <h2>
               <FontAwesomeIcon className="icon" icon={faEnvelope} />
@@ -59,7 +55,7 @@ const Contact = () => {
           <a href="https://github.com/ColinJhEdwards" target="_blank">
             <h2>
               <i class="fab fa-github-square"></i>
-              https://github.com/ColinJhEdwards
+              Github
             </h2>
           </a>
           <a
@@ -68,7 +64,7 @@ const Contact = () => {
           >
             <h2>
               <i class="fab fa-linkedin"></i>
-              https://www.linkedin.com/in/colin-edwards
+              Linkedin
             </h2>
           </a>
         </div>
