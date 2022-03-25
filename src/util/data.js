@@ -156,7 +156,7 @@ export const ProjectData = () => {
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
       longDesc:
         "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a 14 foot python to a 1 inch dart frog and everything in between. This web-based app will allow the user to view their future scaly family member, add animals to their cart and learn more about all of the amazing ways to incorporate them into your life.",
-      code: ["JavaScript"],
+      code: ["JavaScript ", "- MySQL ", "- express", "- handlebars"],
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/LeesReptileEmporium",
       img: [leeHome, leeBrowse, leeCollection, leeReviews],
