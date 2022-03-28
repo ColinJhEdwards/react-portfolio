@@ -92,7 +92,7 @@ export const ProjectData = () => {
         "- framer motion ",
         "- styled components",
       ],
-      deploy: "https://murphys-music-school.herokuapp.com/",
+      deploy: "https://colinjhedwards.github.io/murphy-music-school/",
       repo: "https://github.com/ColinJhEdwards/murphy-music-school",
       img: [home, home1, home2, courses, teachers, contact1, contact2],
       mobileImg: [
@@ -118,7 +118,7 @@ export const ProjectData = () => {
         "- lazy load image",
         "- styled components",
       ],
-      deploy: "https://sweep-movies.herokuapp.com/",
+      deploy: "https://colinjhedwards.github.io/Sweep/",
       repo: "https://github.com/ColinJhEdwards/Sweep",
       img: [
         sweepHome,
