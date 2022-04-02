@@ -32,17 +32,22 @@ const Home = () => {
           </Hide>
           <Hide>
             <motion.div variants={slider}>
-              <a href="https://github.com/ColinJhEdwards" target="_blank">
-                <i class="fab fa-github-square"></i>
+              <a
+                href="https://github.com/ColinJhEdwards"
+                target="_blank"
+                rel="norefferer"
+              >
+                <i className="fab fa-github-square"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/colin-edwards-9a313a140/"
                 target="_blank"
+                rel="norefferer"
               >
-                <i class="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a href="mailto: colinjhedwards@gmail.com">
-                <i class="fas fa-envelope-square"></i>
+                <i className="fas fa-envelope-square"></i>
               </a>
             </motion.div>
           </Hide>

@@ -11,7 +11,12 @@ const MyNav = () => {
   return (
     <StyledNav>
       <h1>
-        <a id="logo" href="https://github.com/ColinJhEdwards" target="_blank">
+        <a
+          id="logo"
+          href="https://github.com/ColinJhEdwards"
+          target="_blank"
+          rel="norefferer"
+        >
           <FontAwesomeIcon icon={faCode} />
           Colin Edwards
         </a>

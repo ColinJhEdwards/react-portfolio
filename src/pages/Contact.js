@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-  faMobileAlt,
   faEnvelope,
   faMapMarkerAlt,
   faFile,
@@ -34,7 +33,7 @@ const Contact = () => {
             <FontAwesomeIcon className="icon" icon={faUser} />
             Colin Edwards
           </h2>
-          <a href={resume} target="_blank">
+          <a href={resume} target="_blank" rel="norefferer">
             <h2>
               <FontAwesomeIcon className="icon" icon={faFile} />
               Resume
@@ -63,7 +62,7 @@ const Contact = () => {
             target="_blank"
           >
             <h2>
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
               Linkedin
             </h2>
           </a>

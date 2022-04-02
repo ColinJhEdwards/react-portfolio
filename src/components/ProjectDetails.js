@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import ScrollTop from "./ScrollTop";
 
 const ProjectDetails = ({ title, description, img, mImg, key }) => {
-  console.log(img);
   return (
     <Section>
       <Details
@@ -27,7 +26,7 @@ const ProjectDetails = ({ title, description, img, mImg, key }) => {
 
         <Link to="/projects">
           <button title="Back">
-            <i class="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left"></i>
           </button>
         </Link>
       </Details>
