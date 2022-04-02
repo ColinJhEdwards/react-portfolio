@@ -106,7 +106,8 @@ const StyledDiv = styled(motion.div)`
       }
     }
   }
-  @media (max-width: 768px) {
+
+  @media (max-width: 820px) {
     width: 600px;
     min-height: 500px;
     margin: 2rem 1rem;
