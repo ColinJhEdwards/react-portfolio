@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -9,38 +10,53 @@ const Skills = () => {
       <AnimateSharedLayout>
         <Toggle title="Languages">
           <div className="lang">
-            <div className="languages">
-              <h2>HTML5</h2>
-              <h2>CSS</h2>
-              <h2>JavaScript</h2>
-            </div>
+            <motion.div
+              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.5 }}
+              className="languages"
+            >
+              <h2>&#60;HTML5&#62;</h2>
+              <h2>&#60;CSS&#62;</h2>
+              <h2>&#60;JavaScript&#62;</h2>
+            </motion.div>
           </div>
         </Toggle>
         <Toggle title="Technologies">
           <div className="tech">
-            <div className="tech1">
-              <h2>React</h2>
-              <h2>node.js</h2>
-              <h2>Bootstrap</h2>
-              <h2>jQuery</h2>
-              <h2>MongoDB</h2>
-              <h2>Styled Components</h2>
-              <h2>Framer-Motion</h2>
-              <h2>Redux</h2>
-              <h2>GIT</h2>
-              <h2>Github</h2>
-            </div>
+            <motion.div
+              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.5 }}
+              className="tech1"
+            >
+              <h2>&#60;React&#62;</h2>
+              <h2>&#60;node.js&#62;</h2>
+              <h2>&#60;Bootstrap&#62;</h2>
+              <h2>&#60;jQuery&#62;</h2>
+              <h2>&#60;MongoDB&#62;</h2>
+              <h2>&#60;Styled Components&#62;</h2>
+              <h2>&#60;Framer-Motion&#62;</h2>
+              <h2>&#60;Redux&#62;</h2>
+              <h2>&#60;GIT&#62;</h2>
+              <h2>&#60;Github&#62;</h2>
+            </motion.div>
           </div>
         </Toggle>
         <Toggle title="Studying">
           <div className="study">
-            <div className="studying">
-              <h2>GraphQl</h2>
-              <h2>Typescript</h2>
-              <h2>React</h2>
-              <h2>Algorithms</h2>
-              <h2>Test Driven Development</h2>
-            </div>
+            <motion.div
+              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.5 }}
+              className="studying"
+            >
+              <h2>&#60;GraphQl&#62;</h2>
+              <h2>&#60;Typescript&#62;</h2>
+              <h2>&#60;React&#62;</h2>
+              <h2>&#60;Algorithms&#62;</h2>
+              <h2>&#60;Test Driven Development&#62;</h2>
+            </motion.div>
           </div>
         </Toggle>
       </AnimateSharedLayout>
@@ -55,7 +71,6 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-
   .lang,
   .tech,
   .study {

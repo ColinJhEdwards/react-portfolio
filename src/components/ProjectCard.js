@@ -102,7 +102,7 @@ const StyledDiv = styled(motion.div)`
       background: #1517bd;
       transition: ease all 0.5s;
       &:hover {
-        background: #3336f8;
+        background: #07097e;
       }
     }
   }
@@ -122,8 +122,7 @@ const StyledDiv = styled(motion.div)`
       p {
         padding: 0.5rem 0.5rem;
         &:hover {
-          background: none;
-          color: #1517bd;
+          background: #07097e;
         }
       }
     }
