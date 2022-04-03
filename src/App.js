@@ -10,6 +10,7 @@ import MyNav from "./components/Nav";
 import Footer from "./components/Footer";
 import { ProjectData } from "./util/data";
 import ProjectDetails from "./components/ProjectDetails";
+import Blog from "./components/Blog";
 
 function App() {
   const location = useLocation();
@@ -38,6 +39,9 @@ function App() {
               />
             </Route>
           ))}
+          <Route path="/blog">
+            <Blog />
+          </Route>
           <Route path="/contact">
             <Contact />
           </Route>

@@ -31,7 +31,6 @@ const MyNav = () => {
             animate={{ width: path === "/" ? "100%" : "0%" }}
           ></motion.div>
         </li>
-
         <li>
           <Link to="/projects">Projects</Link>
           <motion.div
@@ -39,6 +38,15 @@ const MyNav = () => {
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: path === "/projects" ? "100%" : "0%" }}
+          ></motion.div>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+          <motion.div
+            className="line"
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: path === "/blog" ? "100%" : "0%" }}
           ></motion.div>
         </li>
         <li>
