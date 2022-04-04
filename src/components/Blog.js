@@ -16,13 +16,14 @@ const Blog = () => {
         <h1>My blogs</h1>
         <p>
           The early days of learning how to code can be daunting. <br />
-          In this blog I hope to cover topics that I struggled with and explain
-          them in a simplified manner. <br /> Ranging from beginner subjects to
-          more advanced.
+          In this blog I hope to cover topics that I struggled with, new
+          technologies I work with, plus tips and tricks I've picked up during
+          my coding journey.
         </p>
+        <div className="line"></div>
       </div>
       <div className="blogs">
-        <div className="thumbnail">
+        {/* <div className="thumbnail">
           <div className="image">
             <FontAwesomeIcon icon={faCube} />
           </div>
@@ -72,7 +73,7 @@ const Blog = () => {
             <h2>Title</h2>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </StlyedBlog>
   );
@@ -95,10 +96,16 @@ const StlyedBlog = styled(motion.div)`
     text-align: center;
     margin: 2rem 0rem;
     p {
-      width: 70%;
+      width: 50%;
       margin: auto;
       line-height: 50px;
       color: #a8a8a8;
+    }
+    .line {
+      width: 60%;
+      margin: 1rem auto;
+      height: 0.1rem;
+      background: #a8a8a8;
     }
   }
   .blogs {
@@ -113,6 +120,7 @@ const StlyedBlog = styled(motion.div)`
     scrollbar-color: #6969dd #e0e0e0;
     .thumbnail {
       display: flex;
+      align-items: center;
       border: blue solid 2px;
       width: 100%;
       margin: 2rem 0rem;
