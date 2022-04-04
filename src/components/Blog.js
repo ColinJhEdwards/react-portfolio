@@ -13,7 +13,7 @@ const Blog = () => {
       exit="exit"
     >
       <div className="title">
-        <h1>My blogs</h1>
+        <h1>My Blogs</h1>
         <p>
           The early days of learning how to code can be daunting. <br />
           In this blog I hope to cover topics that I struggled with, new
