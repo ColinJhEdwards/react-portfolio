@@ -137,6 +137,13 @@ const StyledNav = styled.div`
       font-size: 1rem;
     }
   }
+  @media (max-width: 420px) {
+    ul {
+      li {
+        margin: 0rem;
+      }
+    }
+  }
 `;
 
 export default MyNav;

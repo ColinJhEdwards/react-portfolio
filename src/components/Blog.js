@@ -136,6 +136,17 @@ const StlyedBlog = styled(motion.div)`
       }
     }
   }
+
+  @media (max-width: 850px) {
+    .title {
+      p {
+        width: 90%;
+        margin: auto;
+        line-height: 50px;
+        color: #a8a8a8;
+      }
+    }
+  }
 `;
 
 export default Blog;
