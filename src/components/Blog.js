@@ -23,19 +23,19 @@ const Blog = () => {
         <div className="line"></div>
       </div>
       <div className="blogs">
-        {/* <div className="thumbnail">
+        <div className="thumbnail">
           <div className="image">
             <FontAwesomeIcon icon={faCube} />
           </div>
           <div className="text">
-            <h2>What is FlexBox?</h2>
+            <h2>Coming Soon</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
               autem.
             </p>
           </div>
         </div>
-        <div className="thumbnail">
+        {/* <div className="thumbnail">
           <div className="image">
             <FontAwesomeIcon icon={faCube} />
           </div>
