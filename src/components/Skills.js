@@ -69,7 +69,7 @@ const StyledDiv = styled.div`
   margin: auto;
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   .lang,
   .tech,
@@ -81,12 +81,25 @@ const StyledDiv = styled.div`
   }
   .words {
     margin-bottom: 2rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 1rem 0rem;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+      background: gray;
+      h1 {
+        color: black;
+      }
+    }
     h1 {
       letter-spacing: 4px;
-      overflow: hidden;
+      margin: 0rem 1rem;
       color: #1f51ff;
-      border-bottom: 2px solid gray;
-      cursor: pointer;
+
       span {
         color: white;
       }
