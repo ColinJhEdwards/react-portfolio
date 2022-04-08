@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <StyledDiv>
+      <div className="title">
+        <h2>My Skills</h2>
+      </div>
       <AnimateSharedLayout>
         <Toggle title="Languages">
           <div className="lang">
@@ -67,10 +70,14 @@ const Skills = () => {
 const StyledDiv = styled.div`
   width: 90%;
   margin: auto;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  .title {
+    min-height: 10vh;
+    text-align: center;
+  }
   .lang,
   .tech,
   .study {
@@ -112,6 +119,7 @@ const StyledDiv = styled.div`
     margin: 1rem 0rem;
     display: flex;
     flex-wrap: wrap;
+
     h2 {
       margin-right: 1rem;
     }
@@ -120,6 +128,15 @@ const StyledDiv = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
   }
+
+  @media (max-width: 440px) {
+    .words {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
   @media (max-width: 414px) {
     width: 90%;
     margin: auto;

@@ -25,7 +25,7 @@ const Home = () => {
           </Hide>
           <Hide>
             <motion.h2 variants={slider} id="desc">
-              Self taught <span>Front End Developer</span> with a certificate in
+              Free lance <span>Web Developer</span> with a certificate in
               Fullstack Development. Passionate about front end development,
               design, and music.
             </motion.h2>
@@ -55,6 +55,7 @@ const Home = () => {
         <motion.div className="me" variants={fade}>
           <img src={colin} alt="colin" />
         </motion.div>
+        <div className="line"></div>
       </StyledDiv>
       <StyledSkills className="skills" variants={fade}>
         <Skills />
@@ -118,6 +119,12 @@ const StyledDiv = styled(motion.div)`
         transform: scale(1.2) rotate(5deg);
       }
     }
+  }
+  .line {
+    height: 0.5px;
+    background: gray;
+    width: 90%;
+    margin: 1rem auto;
   }
   @media (max-width: 1750px) {
     .aboutMe,
