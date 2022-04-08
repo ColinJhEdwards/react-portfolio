@@ -101,8 +101,13 @@ const StyledDiv = styled.div`
     justify-content: space-between;
     cursor: pointer;
     &:hover {
-      background: #1f1f1f;
+      background: #181818;
+
+      h1 {
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+      }
     }
+
     h1 {
       letter-spacing: 4px;
       margin: 0rem 1rem;

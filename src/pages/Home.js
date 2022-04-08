@@ -2,7 +2,7 @@ import React from "react";
 import Skills from "../components/Skills";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { pageAnimation, slider, svgSlide, fade } from "../animations";
+import { pageAnimation, slider, fade } from "../animations";
 import colin from "../Images/Colin.JPG";
 
 const Home = () => {
@@ -56,7 +56,7 @@ const Home = () => {
         <motion.div className="me" variants={fade}>
           <img src={colin} alt="colin" />
         </motion.div>
-        <div className="line"></div>
+        <motion.div variants={fade} className="line"></motion.div>
       </StyledDiv>
       <StyledSkills className="skills" variants={fade}>
         <Skills />
