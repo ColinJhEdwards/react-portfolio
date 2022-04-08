@@ -27,7 +27,8 @@ const Home = () => {
             <motion.h2 variants={slider} id="desc">
               Free lance <span>Web Developer</span> with a certificate in
               Fullstack Development. Passionate about front end development,
-              design, and music.
+              design, and music. Currently seeking a Junior Front End Developer
+              position.
             </motion.h2>
           </Hide>
           <Hide>
@@ -89,7 +90,7 @@ const StyledDiv = styled(motion.div)`
       color: white;
     }
     #desc {
-      width: 80%;
+      width: 90%;
       color: gray;
     }
     span {

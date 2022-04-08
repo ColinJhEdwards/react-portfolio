@@ -34,13 +34,15 @@ const Skills = () => {
               className="tech1"
             >
               <h2>&#60;React&#62;</h2>
-              <h2>&#60;node.js&#62;</h2>
+              <h2>&#60;Redux&#62;</h2>
+              <h2>&#60;Framer-Motion&#62;</h2>
+              <h2>&#60;Styled Components&#62;</h2>
+              <h2>&#60;Material-UI&#62;</h2>
               <h2>&#60;Bootstrap&#62;</h2>
+              <h2>&#60;node.js&#62;</h2>
               <h2>&#60;jQuery&#62;</h2>
               <h2>&#60;MongoDB&#62;</h2>
-              <h2>&#60;Styled Components&#62;</h2>
-              <h2>&#60;Framer-Motion&#62;</h2>
-              <h2>&#60;Redux&#62;</h2>
+              <h2>&#60;MySQL&#62;</h2>
               <h2>&#60;GIT&#62;</h2>
               <h2>&#60;Github&#62;</h2>
             </motion.div>
@@ -54,9 +56,7 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
               className="studying"
             >
-              <h2>&#60;GraphQl&#62;</h2>
               <h2>&#60;Typescript&#62;</h2>
-              <h2>&#60;React&#62;</h2>
               <h2>&#60;Algorithms&#62;</h2>
               <h2>&#60;Test Driven Development&#62;</h2>
             </motion.div>
@@ -77,6 +77,10 @@ const StyledDiv = styled.div`
   .title {
     min-height: 10vh;
     text-align: center;
+    margin: 2rem 0rem;
+    h2 {
+      font-size: 3.5rem;
+    }
   }
   .lang,
   .tech,
@@ -97,10 +101,7 @@ const StyledDiv = styled.div`
     justify-content: space-between;
     cursor: pointer;
     &:hover {
-      background: gray;
-      h1 {
-        color: black;
-      }
+      background: #1f1f1f;
     }
     h1 {
       letter-spacing: 4px;
