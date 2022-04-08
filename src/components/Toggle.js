@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <motion.div onClick={() => setToggle(!toggle)} layout>
+    <motion.div onClick={() => setToggle(!toggle)} layout="position">
       <motion.div className="words">
         <h1>{title}</h1>
         <h1>
