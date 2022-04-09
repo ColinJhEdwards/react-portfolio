@@ -36,14 +36,14 @@ const Home = () => {
               <a
                 href="https://github.com/ColinJhEdwards"
                 target="_blank"
-                rel="norefferer"
+                rel="noreferrer"
               >
                 <i className="fab fa-github-square"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/colin-edwards-9a313a140/"
                 target="_blank"
-                rel="norefferer"
+                rel="noreferrer"
               >
                 <i className="fab fa-linkedin"></i>
               </a>

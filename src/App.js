@@ -28,7 +28,7 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          {data.map((project) => (
+          {/* {data.map((project) => (
             <Route path={`/project/${project.id}`}>
               <ProjectDetails
                 key={project.id}
@@ -38,7 +38,7 @@ function App() {
                 mImg={project.mobileImg}
               />
             </Route>
-          ))}
+          ))} */}
           <Route path="/blog">
             <Blog />
           </Route>
