@@ -164,10 +164,10 @@ const StyledDiv = styled(motion.div)`
 `;
 
 const StyledSkills = styled(motion.div)`
-  min-height: 50vh;
+  /* min-height: 50vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 `;
 
 const Hide = styled.div`

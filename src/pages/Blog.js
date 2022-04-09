@@ -20,7 +20,6 @@ const Blog = () => {
           technologies I work with, plus tips and tricks I've picked up during
           my coding journey in hopes of helping those embarking on this journey.
         </p>
-        <div className="line"></div>
       </div>
       <div className="blogs">
         <div className="thumbnail">

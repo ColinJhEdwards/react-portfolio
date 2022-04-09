@@ -143,19 +143,7 @@ const StyledDiv = styled(motion.div)`
       width: 60%;
     }
   }
-  /* @media (max-width: 1200px) {
-    .image {
-      width: 100%;
-      .imgCover {
-        background: none;
-      }
-    }
-    .content {
-      align-items: center;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  } */
+
   @media (max-width: 1200px) {
     flex-direction: column;
     position: static;
