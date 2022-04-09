@@ -77,7 +77,7 @@ const StyledNav = styled.div`
     text-decoration: none;
     background: black;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 5px;
     transition: ease all 0.5s;
     &:hover {
       background: #1f51ff;

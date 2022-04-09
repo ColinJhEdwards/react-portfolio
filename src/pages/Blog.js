@@ -13,12 +13,12 @@ const Blog = () => {
       exit="exit"
     >
       <div className="title">
-        <h1>My Blogs</h1>
+        <h1>My Blog</h1>
         <p>
           The early days of learning how to code can be daunting. <br />
           In this blog I hope to cover topics that I struggled with, new
           technologies I work with, plus tips and tricks I've picked up during
-          my coding journey.
+          my coding journey in hopes of helping those embarking on this journey.
         </p>
         <div className="line"></div>
       </div>
@@ -73,6 +73,15 @@ const Blog = () => {
             <h2>Title</h2>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
+        </div>
+        <div className="thumbnail">
+          <div className="image">
+            <FontAwesomeIcon icon={faCube} />
+          </div>
+          <div className="text">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
         </div> */}
       </div>
     </StlyedBlog>
@@ -88,7 +97,7 @@ const StlyedBlog = styled(motion.div)`
     background: transparent;
   }
   *::-webkit-scrollbar-thumb {
-    background-color: none;
+    background-color: blue;
     border-radius: 20px;
     border: transparent;
   }
@@ -98,7 +107,7 @@ const StlyedBlog = styled(motion.div)`
     p {
       width: 50%;
       margin: auto;
-      line-height: 50px;
+      line-height: 40px;
       color: #a8a8a8;
     }
     .line {
@@ -114,25 +123,38 @@ const StlyedBlog = styled(motion.div)`
     margin: auto;
     overflow-y: scroll;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-around;
     scrollbar-width: thin;
     scrollbar-color: #6969dd #e0e0e0;
     .thumbnail {
       display: flex;
       align-items: center;
-      border: blue solid 2px;
-      width: 100%;
+      box-shadow: 0px 0px 4px 2px blue;
+      width: 40%;
       margin: 2rem 0rem;
       padding: 2rem 0rem;
       cursor: pointer;
       transition: all 0.5s ease;
       &:hover {
-        background: blue;
+        box-shadow: 0px 0px 4px 4px blue;
       }
       .image {
         font-size: 3rem;
         margin: 0rem 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 940px) {
+    .blogs {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .thumbnail {
+        width: 90%;
       }
     }
   }
