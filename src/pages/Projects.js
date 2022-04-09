@@ -34,6 +34,10 @@ const Projects = () => {
             />
           ))}
         </motion.div>
+        <div className="title">
+          <h2>Other Noteworthy Projects</h2>
+          <hr width="60%" color="gray" />
+        </div>
       </StyledProjects>
     </>
   );

@@ -11,7 +11,7 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
     <Hide>
       <StyledDiv variants={grow}>
         <div className="image">
-          <a href={deploy}>
+          <a href={deploy} target="_blank" rel="noreferrer">
             <img src={cover} alt="coverimg" />
           </a>
           <div className="imgCover"></div>
@@ -68,7 +68,7 @@ const StyledDiv = styled(motion.div)`
       cursor: pointer;
     }
     .imgCover {
-      background: #0000ff7b;
+      background: #01017c7a;
       position: absolute;
       top: 0;
       left: 0;
@@ -138,37 +138,49 @@ const StyledDiv = styled(motion.div)`
     }
   }
 
-  @media (max-width: 820px) {
-    width: 600px;
-    min-height: 500px;
-    margin: 2rem 1rem;
-  }
-
-  @media (max-width: 500px) {
-    width: 350px;
-    margin: 2rem 1rem;
-    #desc {
-      height: 100%;
+  @media (max-width: 1300px) {
+    .content {
+      width: 60%;
     }
-    .links {
-      p {
-        padding: 0.5rem 0.5rem;
-        &:hover {
-          background: #07097e;
-        }
+  }
+  /* @media (max-width: 1200px) {
+    .image {
+      width: 100%;
+      .imgCover {
+        background: none;
       }
     }
-  }
-  @media (max-width: 414px) {
-  }
-  @media (max-width: 375px) {
-    margin: 2rem 1rem;
-  }
-  @media (max-width: 320px) {
-    width: 300px;
-    height: 240px;
-    #desc {
-      height: 70px;
+    .content {
+      align-items: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  } */
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    position: static;
+    border-radius: 5px;
+    .image {
+      width: 100%;
+      img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .imgCover {
+        background: none;
+      }
+    }
+    .content {
+      position: static;
+      align-items: flex-start;
+      width: 100%;
+      transform: translateX(0);
+      background: #202020;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      #desc {
+        padding: 0;
+      }
     }
   }
 `;
