@@ -10,7 +10,7 @@ import MyNav from "./components/Nav";
 import Footer from "./components/Footer";
 import { ProjectData } from "./util/data";
 import ProjectDetails from "./components/ProjectDetails";
-import Blog from "./components/Blog";
+import Blog from "./pages/Blog";
 
 function App() {
   const location = useLocation();
