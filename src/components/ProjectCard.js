@@ -10,33 +10,35 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
     <Hide>
       <StyledDiv variants={grow}>
-        <Hide>
-          <img src={cover} alt="coverimg" />
-        </Hide>
-        <h2>
-          <FontAwesomeIcon icon={faBook} /> {title}
-        </h2>
-        <div className="line"></div>
-        <p id="desc">{description}</p>
-        <p className="techUsed">
-          <span
-            style={{ color: code[0] === "JavaScript" ? "yellow" : "#129dc7" }}
-          >
-            <FontAwesomeIcon icon={faCircle} />
-          </span>
-          {code}
-        </p>
+        <div className="image">
+          <a href={deploy}>
+            <img src={cover} alt="coverimg" />
+          </a>
+          <div className="imgCover"></div>
+        </div>
 
-        <div className="links">
-          <Link to={`/project/${id}`}>
-            <p>Preview</p>
-          </Link>
-          <a href={repo} target="_blank">
-            <p>Repository</p>
-          </a>
-          <a href={deploy} target="_blank">
-            <p>Deployed Application</p>
-          </a>
+        <div className="content">
+          <h2>
+            <FontAwesomeIcon icon={faBook} /> {title}
+          </h2>
+          <div className="line"></div>
+          <p id="desc">{description}</p>
+          <p className="techUsed">
+            <span
+              style={{ color: code[0] === "JavaScript" ? "yellow" : "#129dc7" }}
+            >
+              <FontAwesomeIcon icon={faCircle} />
+            </span>
+            {code}
+          </p>
+          <div className="links">
+            <a href={repo} target="_blank">
+              <p>Repository</p>
+            </a>
+            <a href={deploy} target="_blank">
+              <p>Deployed Application</p>
+            </a>
+          </div>
         </div>
       </StyledDiv>
     </Hide>
@@ -44,50 +46,79 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
 };
 
 const StyledDiv = styled(motion.div)`
-  border-radius: 10px;
   transition: all ease 0.5s;
-  width: 800px;
-  min-height: 660px;
-  margin: 4rem 2rem;
+  width: 100%;
+  margin: 4rem auto;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #202020;
-  #desc {
-    height: 38px;
+  align-items: center;
+  position: relative;
+  &:hover {
+    .image {
+      .imgCover {
+        background: none;
+      }
+    }
   }
-  h2,
-  p {
-    color: white;
-    text-shadow: 2px 2px black;
-    margin: 1rem;
+  .image {
+    position: relative;
+    width: 50%;
+    img {
+      width: 100%;
+      margin: 0;
+      cursor: pointer;
+    }
+    .imgCover {
+      background: #0000ff7b;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all ease 0.5s;
+      pointer-events: none;
+    }
   }
-  h2 {
-    font-size: 1.5rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    #desc {
+      background: #202020;
+      padding: 2rem;
+    }
+    h2,
+    p {
+      color: white;
+      text-shadow: 2px 2px black;
+      margin: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .line {
+      width: 60%;
+      height: 2px;
+      background: gray;
+      margin: 0rem 1rem;
+    }
+
+    .techUsed {
+      color: #b8b8b8;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    span {
+      margin-right: 5px;
+    }
   }
-  .line {
-    width: 95%;
-    height: 2px;
-    background: gray;
-    margin: 0rem auto;
-  }
-  img {
-    width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    margin: 0;
-  }
-  .techUsed {
-    color: #b8b8b8;
-  }
-  p {
-    font-size: 0.8rem;
-  }
-  span {
-    margin-right: 5px;
-  }
+
   .links {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,7 +128,7 @@ const StyledDiv = styled(motion.div)`
       font-size: 1rem;
       text-decoration: none;
       border-radius: 10px;
-      padding: 0.5rem 2rem;
+      padding: 0.2rem 1rem;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
       background: #1517bd;
       transition: ease all 0.5s;

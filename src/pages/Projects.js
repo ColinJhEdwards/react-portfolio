@@ -41,7 +41,6 @@ const Projects = () => {
 
 const StyledProjects = styled(motion.div)`
   min-height: 90vh;
-
   .title {
     display: flex;
     justify-content: center;
@@ -51,8 +50,9 @@ const StyledProjects = styled(motion.div)`
   }
   .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
   }
 `;
 

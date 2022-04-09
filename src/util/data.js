@@ -130,6 +130,11 @@ export const ProjectData = () => {
       ],
       mobileImg: [sweepMobile1, sweepMobile2],
     },
+  ];
+};
+
+export const minorProjectData = () => {
+  return [
     {
       id: 4,
       title: "Socks",
@@ -175,6 +180,7 @@ export const ProjectData = () => {
       img: [todoHome],
       mobileImg: [todoMobile],
     },
+
     {
       id: 7,
       title: "Photographer Portfolio",
