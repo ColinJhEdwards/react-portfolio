@@ -15,7 +15,7 @@ const MyNav = () => {
           id="logo"
           href="https://github.com/ColinJhEdwards"
           target="_blank"
-          rel="norefferer"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faCode} />
           Colin Edwards

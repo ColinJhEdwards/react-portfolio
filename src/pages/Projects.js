@@ -9,7 +9,6 @@ import MinorProjectCard from "../components/MinorProjectCard";
 const Projects = () => {
   const data = ProjectData();
   const minorData = minorProjectData();
-  console.log(minorData);
   return (
     <>
       <StyledProjects

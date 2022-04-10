@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { grow, fade } from "../animations";
-import { Link } from "react-router-dom";
+import { grow } from "../animations";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
@@ -31,10 +30,10 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
             {code}
           </p>
           <div className="links">
-            <a href={repo} target="_blank">
+            <a href={repo} target="_blank" rel="noreferrer">
               <p>Repository</p>
             </a>
-            <a href={deploy} target="_blank">
+            <a href={deploy} target="_blank" rel="noreferrer">
               <p>Deployed Application</p>
             </a>
           </div>

@@ -26,14 +26,14 @@ const Contact = () => {
       </StyledTitle>
       <StyledContact variants={slider2}>
         <div className="image">
-          <img src={colin} alt="image-of-me" />
+          <img src={colin} alt="me" />
         </div>
         <div className="info">
           <h2>
             <FontAwesomeIcon className="icon" icon={faUser} />
             Colin Edwards
           </h2>
-          <a href={resume} target="_blank" rel="norefferer">
+          <a href={resume} target="_blank" rel="noreferrer">
             <h2>
               <FontAwesomeIcon className="icon" icon={faFile} />
               Resume
@@ -51,7 +51,11 @@ const Contact = () => {
               ColinJhEdwards@gmail.com
             </h2>
           </a>
-          <a href="https://github.com/ColinJhEdwards" target="_blank">
+          <a
+            href="https://github.com/ColinJhEdwards"
+            target="_blank"
+            rel="noreferrer"
+          >
             <h2>
               <i class="fab fa-github-square"></i>
               Github
@@ -60,6 +64,7 @@ const Contact = () => {
           <a
             href="https://www.linkedin.com/in/colin-edwards-9a313a140/"
             target="_blank"
+            rel="noreferrer"
           >
             <h2>
               <i className="fab fa-linkedin"></i>

@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
+import { fade } from "../animations";
 
 const MinorProjectCard = ({ title, description, code, repo, deploy }) => {
   return (
-    <StyledCard>
+    <StyledCard variants={fade}>
       <div className="icon">
         <FontAwesomeIcon icon={faFolder} id="folder" />
         <div className="links">
