@@ -72,9 +72,7 @@ const StyledProjects = styled(motion.div)`
     width: 80%;
     margin: auto;
   }
-  .other {
-    margin-top: 10rem;
-  }
+
   .minorProjects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
