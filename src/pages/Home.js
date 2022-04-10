@@ -38,24 +38,31 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-github-square"></i>
+                <i class="fa-brands fa-github"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/colin-edwards-9a313a140/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a
                 href="https://www.instagram.com/colinseecolindo/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://open.spotify.com/user/colinjhedwards"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-spotify"></i>
               </a>
               <a href="mailto: colinjhedwards@gmail.com">
-                <i className="fas fa-envelope-square"></i>
+                <i class="fa-solid fa-envelope"></i>
               </a>
             </motion.div>
           </Hide>
