@@ -32,7 +32,7 @@ const Home = () => {
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.div variants={slider}>
+            <motion.div variants={slider} className="social">
               <a
                 href="https://github.com/ColinJhEdwards"
                 target="_blank"
@@ -165,6 +165,12 @@ const StyledDiv = styled(motion.div)`
         margin: auto;
         text-align: center;
       }
+    }
+  }
+
+  @media (max-width: 594px) {
+    .social {
+      text-align: center;
     }
   }
 
