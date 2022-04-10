@@ -136,7 +136,7 @@ export const ProjectData = () => {
 export const minorProjectData = () => {
   return [
     {
-      id: 4,
+      id: 1,
       title: "Socks",
       Description:
         "Socks is a web-based application that allows users to save and view their current stock units.",
@@ -155,12 +155,11 @@ export const minorProjectData = () => {
       mobileImg: [socksMobileHome, socksMobileMarket],
     },
     {
-      id: 5,
+      id: 2,
       title: "Lee's Reptile Emporium",
       Description:
-        "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a one inch dart drog to a 14 foot python and everything in between.",
-      longDesc:
-        "Lee's Reptile Emporium is your one stop online shop for new pets ranging from a 14 foot python to a 1 inch dart frog and everything in between. This web-based app will allow the user to view their future scaly family member, add animals to their cart and learn more about all of the amazing ways to incorporate them into your life.",
+        "Lee's Reptile Emporium is your one stop online shop for new reptilian pets.",
+
       code: ["JavaScript", " - MySQL ", "- express", "- handlebars"],
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/LeesReptileEmporium",
@@ -168,7 +167,7 @@ export const minorProjectData = () => {
       mobileImg: [leeMobileHome, leeMobileFrog],
     },
     {
-      id: 6,
+      id: 3,
       title: "ToDo For Me",
       Description:
         "A simple todo list for creating a list of items you must complete with functioning local storage",
@@ -182,7 +181,7 @@ export const minorProjectData = () => {
     },
 
     {
-      id: 7,
+      id: 4,
       title: "Photographer Portfolio",
       Description:
         "A basic template for a professional photographers personal portfolio.",
@@ -200,7 +199,7 @@ export const minorProjectData = () => {
       ],
     },
     {
-      id: 8,
+      id: 5,
       title: "Aperture",
       Description:
         "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects.",

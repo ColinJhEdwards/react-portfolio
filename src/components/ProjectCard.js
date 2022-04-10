@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { grow } from "../animations";
+import { grow, fade } from "../animations";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
@@ -16,7 +16,6 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
           </a>
           <div className="imgCover"></div>
         </div>
-
         <div className="content">
           <h2>
             <FontAwesomeIcon icon={faBook} /> {title}
@@ -68,7 +67,7 @@ const StyledDiv = styled(motion.div)`
       cursor: pointer;
     }
     .imgCover {
-      background: #01017c7a;
+      background: #010146b0;
       position: absolute;
       top: 0;
       left: 0;
@@ -143,7 +142,6 @@ const StyledDiv = styled(motion.div)`
       width: 60%;
     }
   }
-
   @media (max-width: 1200px) {
     flex-direction: column;
     position: static;

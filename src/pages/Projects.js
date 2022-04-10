@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { ProjectData } from "../util/data";
+import { ProjectData, minorProjectData } from "../util/data";
 import ProjectCard from "../components/ProjectCard";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animations";
+import MinorProjectCard from "../components/MinorProjectCard";
 
 const Projects = () => {
-  const [data, setData] = useState(ProjectData);
-
+  const data = ProjectData();
+  const minorData = minorProjectData();
+  console.log(minorData);
   return (
     <>
       <StyledProjects
@@ -37,6 +39,19 @@ const Projects = () => {
           <h2>Other Noteworthy Projects</h2>
           <hr width="60%" color="gray" />
         </div>
+        <div className="minorProjects">
+          {minorData.map((project) => (
+            <MinorProjectCard
+              key={project.id}
+              id={project.id}
+              title={project.title}
+              description={project.Description}
+              code={project.code}
+              deploy={project.deploy}
+              repo={project.repo}
+            />
+          ))}
+        </div>
       </StyledProjects>
     </>
   );
@@ -50,12 +65,21 @@ const StyledProjects = styled(motion.div)`
     align-items: center;
     flex-direction: column;
     padding: 2rem 0rem;
+    text-align: center;
   }
   .projects {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: auto;
+  }
+  .minorProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    width: 80%;
+    margin: 2rem auto;
   }
 `;
 
