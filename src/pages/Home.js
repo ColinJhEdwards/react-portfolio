@@ -47,6 +47,13 @@ const Home = () => {
               >
                 <i className="fab fa-linkedin"></i>
               </a>
+              <a
+                href="https://www.instagram.com/colinseecolindo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-instagram-square"></i>
+              </a>
               <a href="mailto: colinjhedwards@gmail.com">
                 <i className="fas fa-envelope-square"></i>
               </a>

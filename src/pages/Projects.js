@@ -34,7 +34,7 @@ const Projects = () => {
             />
           ))}
         </motion.div>
-        <div className="title">
+        <div className="title other">
           <h2>Other Noteworthy Projects</h2>
           <hr width="60%" color="gray" />
         </div>
@@ -71,6 +71,9 @@ const StyledProjects = styled(motion.div)`
     flex-direction: column;
     width: 80%;
     margin: auto;
+  }
+  .other {
+    margin-top: 10rem;
   }
   .minorProjects {
     display: grid;

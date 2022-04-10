@@ -58,9 +58,11 @@ const StyledDiv = styled(motion.div)`
     }
   }
   .image {
+    border-radius: 5px;
     position: relative;
     width: 50%;
     img {
+      border-radius: 5px;
       width: 100%;
       margin: 0;
       cursor: pointer;
@@ -88,6 +90,7 @@ const StyledDiv = styled(motion.div)`
     #desc {
       background: #202020;
       padding: 2rem;
+      border-radius: 5px;
     }
     h2,
     p {
@@ -125,7 +128,7 @@ const StyledDiv = styled(motion.div)`
     p {
       font-size: 1rem;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 0.2rem 1rem;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
       background: #1517bd;
