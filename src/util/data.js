@@ -63,8 +63,7 @@ export const ProjectData = () => {
       id: 1,
       title: "Inca Wheels",
       Description:
-        // "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
-        "Inca Wheels is currently being moved from being hosted on Heroku to Github pages. DNS propagation can take up to 24 hours to take effect. Website will be unavailable until this process is complete. Thank you for your patience.",
+        "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
       longDesc:
         "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Started as a way to help raise funds for the nonprofit Ruta Verde that focuses on Sustainable Development projects including the building of Community Forests in North America and creating sustainable food solutions in Peru. The Inca were honorable people that valued their surrounding environments at the core of their belief systems, and we hope to honor this ideology by creating a business that focuses on caring for the planet, not just profits.",
       code: [
@@ -74,8 +73,7 @@ export const ProjectData = () => {
         "- framer motion ",
         "- styled components",
       ],
-      deploy:
-        /*"https://www.incawheels.com/",*/ "https://www.colinjhedwards.com",
+      deploy: "https://www.incawheels.com/",
       repo: "https://github.com/ColinJhEdwards/incawheels",
       img: [incaHome, incaVan, incaDest],
       mobileImg: [incaMobHome, incaMobileVan, incaMobileDest],
