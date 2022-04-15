@@ -9,11 +9,13 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
     <Hide>
       <StyledDiv variants={grow}>
-        <div className="image">
-          <a href={deploy} target="_blank" rel="noreferrer">
-            <img src={cover} alt="coverimg" />
-          </a>
-          <div className="imgCover"></div>
+        <div className="hide">
+          <div className="image">
+            <a href={deploy} target="_blank" rel="noreferrer">
+              <img src={cover} alt="coverimg" />
+            </a>
+            <div className="imgCover"></div>
+          </div>
         </div>
         <div className="content">
           <h2>
@@ -52,15 +54,20 @@ const StyledDiv = styled(motion.div)`
   position: relative;
   &:hover {
     .image {
+      transform: scale(1.2);
       .imgCover {
         background: none;
       }
     }
   }
+  .hide {
+    overflow: hidden;
+  }
   .image {
     border-radius: 5px;
     position: relative;
     width: 50%;
+    transition: all ease 0.5s;
     img {
       border-radius: 5px;
       width: 100%;
@@ -151,6 +158,7 @@ const StyledDiv = styled(motion.div)`
     .image {
       width: 100%;
       img {
+        border-radius: 0px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
       }
