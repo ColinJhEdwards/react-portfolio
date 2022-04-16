@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
         <div className="hide">
           <div className="image">
             <a href={deploy} target="_blank" rel="noreferrer">
-              <img src={cover} alt="coverimg" />
+              <img src={cover} alt="coverimg" loading="lazy" />
             </a>
             <div className="imgCover"></div>
           </div>

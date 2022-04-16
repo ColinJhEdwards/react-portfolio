@@ -59,6 +59,11 @@ const MyNav = () => {
           ></motion.div>
         </li>
       </ul>
+      {/* <div className="burger">
+        <div className="one"></div>
+        <div className="two"></div>
+        <div className="three"></div>
+      </div> */}
     </StyledNav>
   );
 };
@@ -72,6 +77,7 @@ const StyledNav = styled.div`
   padding: 1rem 3rem;
   background: black;
   border-bottom: #474040 solid 1px;
+  position: relative;
   a {
     color: white;
     text-decoration: none;
@@ -112,6 +118,21 @@ const StyledNav = styled.div`
       left: 0%;
     }
   }
+  /* .burger {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    top: 10%;
+    right: 0;
+    .one,
+    .two,
+    .three {
+      background: white;
+      height: 0.5px;
+      width: 100%;
+      margin: 1rem 0rem;
+    }
+  } */
   @media (max-width: 1300px) {
     flex-direction: column;
     padding: 0rem;
