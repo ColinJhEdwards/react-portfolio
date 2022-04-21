@@ -3,6 +3,7 @@ import Skills from "../components/Skills";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, slider, fade } from "../animations";
+import AboutMe from "../components/AboutMe";
 import colin from "../Images/Colin.JPG";
 
 const Home = () => {
@@ -75,6 +76,9 @@ const Home = () => {
       <StyledSkills className="skills" variants={fade}>
         <Skills />
       </StyledSkills>
+      <StyledAbout className="about">
+        <AboutMe />
+      </StyledAbout>
     </>
   );
 };
@@ -184,6 +188,11 @@ const StyledDiv = styled(motion.div)`
 `;
 
 const StyledSkills = styled(motion.div)`
+  width: 90%;
+  margin: auto;
+`;
+
+const StyledAbout = styled(motion.div)`
   width: 90%;
   margin: auto;
 `;

@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <StyledDiv>
       <div className="title">
-        <h2>My Skills</h2>
+        <h2>About Me</h2>
       </div>
       <AnimateSharedLayout>
         <Toggle title="Languages">
@@ -70,7 +70,7 @@ const Skills = () => {
 const StyledDiv = styled.div`
   width: 90%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 70vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
