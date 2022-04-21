@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <StyledDiv>
       <div className="title">
-        <h2>About Me</h2>
+        <h2>Skills</h2>
       </div>
       <AnimateSharedLayout>
         <Toggle title="Languages">
