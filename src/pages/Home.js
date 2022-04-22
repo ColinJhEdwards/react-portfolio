@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { pageAnimation, slider, fade } from "../animations";
 import AboutMe from "../components/AboutMe";
 import colin from "../Images/Colin.JPG";
+import OtherSkills from "../components/OtherSkills";
 
 const Home = () => {
   return (
@@ -26,10 +27,10 @@ const Home = () => {
           </Hide>
           <Hide>
             <motion.h2 variants={slider} id="desc">
-              Free lance <span>Web Developer</span> with a certificate in
-              Fullstack Development. Passionate about front end development,
-              design, and music. Currently seeking a Junior Front End Developer
-              position.
+              Creative <span>Front-End Developer</span> with a certificate in
+              Fullstack Development. Passionate about creating beautiful
+              websites, design, and music. Currently seeking a Junior Front-End
+              Developer position.
             </motion.h2>
           </Hide>
           <Hide>
@@ -76,6 +77,9 @@ const Home = () => {
       <StyledSkills className="skills" variants={fade}>
         <Skills />
       </StyledSkills>
+      <StyledOtherSkills className="otherSkills">
+        <OtherSkills />
+      </StyledOtherSkills>
       <StyledAbout className="about">
         <AboutMe />
       </StyledAbout>
@@ -188,6 +192,11 @@ const StyledDiv = styled(motion.div)`
 `;
 
 const StyledSkills = styled(motion.div)`
+  width: 90%;
+  margin: auto;
+`;
+
+const StyledOtherSkills = styled(motion.div)`
   width: 90%;
   margin: auto;
 `;

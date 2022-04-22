@@ -34,7 +34,7 @@ const StyledMe = styled(motion.div)`
   min-height: 70vh;
   width: 90%;
   margin: auto;
-
+  margin-top: 5rem;
   .text {
     text-align: center;
     font-size: 1.5rem;

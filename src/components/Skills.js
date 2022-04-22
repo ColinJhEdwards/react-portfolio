@@ -70,7 +70,7 @@ const Skills = () => {
 const StyledDiv = styled.div`
   width: 90%;
   margin: auto;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -101,7 +101,7 @@ const StyledDiv = styled.div`
     justify-content: space-between;
     cursor: pointer;
     &:hover {
-      background: #181818;
+      background: #33333371;
 
       h1 {
         text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
