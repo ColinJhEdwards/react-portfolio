@@ -27,8 +27,8 @@ const OtherSkills = () => {
           <div className="text">
             <h2>Creative</h2>
             <p>
-              I love art, music, and good design. I thrive in front-end
-              development.
+              I love art, music, and good design. Front-end development, to me,
+              is fun!
             </p>
           </div>
         </div>
@@ -46,13 +46,13 @@ const OtherSkills = () => {
         </div>
         <div className="container">
           <div className="icon">
-            <i class="fa-solid fa-user-tie"></i>
+            <i class="fa-solid fa-people-group"></i>
           </div>
           <div className="text">
-            <h2>Professional</h2>
+            <h2>Team Player</h2>
             <p>
-              I am reliable, I set high standards for myself, and I keep my
-              word.
+              I work well independently but love being a part of a team working
+              towards a goal.
             </p>
           </div>
         </div>
@@ -62,19 +62,16 @@ const OtherSkills = () => {
           </div>
           <div className="text">
             <h2>Inquisitive</h2>
-            <p>I have a strong student mentality and love learning.</p>
+            <p>I have a strong student mentality and am eager to learn more!</p>
           </div>
         </div>
         <div className="container">
           <div className="icon">
-            <i class="fa-solid fa-handshake"></i>
+            <i class="fa-solid fa-puzzle-piece"></i>
           </div>
           <div className="text">
-            <h2>Honest</h2>
-            <p>
-              I own up to my mistakes. I am not afraid to admit where I am
-              lacking in knowledge.
-            </p>
+            <h2>Problem Solver</h2>
+            <p>I look forward to error messages in my console log &#128520;</p>
           </div>
         </div>
       </div>
