@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import GuitarDate from "./GuitarDate";
 
 const AboutMe = () => {
   return (
@@ -8,21 +9,22 @@ const AboutMe = () => {
       <div className="text">
         <header>
           <h2>When I'm not coding you can find me playing guitar</h2>
+          <GuitarDate />
         </header>
         <div className="guitarVideo">
           <iframe
             src="https://www.youtube.com/embed/3Fxx18mEK_o"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <iframe
             src="https://www.youtube.com/embed/gu3VyJkOCyQ"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

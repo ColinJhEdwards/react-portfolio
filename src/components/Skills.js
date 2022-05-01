@@ -42,7 +42,6 @@ const Skills = () => {
               <h2>&#60;node.js&#62;</h2>
               <h2>&#60;jQuery&#62;</h2>
               <h2>&#60;MongoDB&#62;</h2>
-              <h2>&#60;MySQL&#62;</h2>
               <h2>&#60;GIT&#62;</h2>
               <h2>&#60;Github&#62;</h2>
             </motion.div>
