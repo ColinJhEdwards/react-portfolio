@@ -8,7 +8,7 @@ const AboutMe = () => {
     <StyledMe className="aboutme">
       <div className="text">
         <header>
-          <h2>When I'm not coding you can find me playing guitar</h2>
+          <h2>When I'm not coding you can find me playing guitar!</h2>
           <GuitarDate />
         </header>
         <div className="guitarVideo">

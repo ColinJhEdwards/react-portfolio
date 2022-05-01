@@ -81,6 +81,12 @@ const StyledProjects = styled(motion.div)`
     width: 80%;
     margin: 2rem auto;
   }
+
+  @media (max-width: 430px) {
+    .projects {
+      width: 90%;
+    }
+  }
 `;
 
 export default Projects;

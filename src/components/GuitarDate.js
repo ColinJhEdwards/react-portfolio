@@ -49,20 +49,20 @@ function GuitarDate() {
       <h2>I've been playing for:</h2>
       <StyledDate class="countup" id="countup1">
         <div className="days">
-          <span class="timeel ">{day} </span>
-          <span class="timeel timeRefDays">Days</span>
+          <span class="timeel1 ">{day} </span>
+          <span class="timeel timeRef">Days</span>
         </div>
         <div className="hours">
-          <span class="timeel ">{hour} </span>
-          <span class="timeel timeRefHours">Hours</span>
+          <span class="timeel1 ">{hour} </span>
+          <span class="timeel timeRef">Hours</span>
         </div>
         <div className="mins">
-          <span class="timeel ">{min} </span>
-          <span class="timeel timeRefMinutes">Minutes</span>
+          <span class="timeel1 ">{min} </span>
+          <span class="timeel timeRef">Minutes</span>
         </div>
         <div className="secs">
-          <span class="timeel ">{sec} </span>
-          <span class="timeel timeRefSeconds">Seconds</span>
+          <span class="timeel1 ">{sec} </span>
+          <span class="timeel timeRef">Seconds</span>
         </div>
       </StyledDate>
     </>
@@ -74,6 +74,20 @@ const StyledDate = styled.div`
   justify-content: center;
   div {
     margin: 2rem 1rem;
+    .timeel1 {
+      font-size: 3rem;
+      color: #1f51ff;
+    }
+  }
+
+  @media (max-width: 880px) {
+    div {
+      margin: 2rem 1rem;
+      span,
+      .timeel1 {
+        font-size: 1rem;
+      }
+    }
   }
 `;
 

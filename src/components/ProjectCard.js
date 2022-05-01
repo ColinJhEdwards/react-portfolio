@@ -7,41 +7,39 @@ import { grow } from "../animations";
 
 const ProjectCard = ({ title, description, code, repo, deploy, id, cover }) => {
   return (
-    <Hide>
-      <StyledDiv variants={grow}>
-        <div className="hide">
-          <div className="image">
-            <a href={deploy} target="_blank" rel="noreferrer">
-              <img src={cover} alt="coverimg" loading="lazy" />
-            </a>
-            <div className="imgCover"></div>
-          </div>
+    <StyledDiv variants={grow}>
+      <div className="hide">
+        <div className="image">
+          <a href={deploy} target="_blank" rel="noreferrer">
+            <img src={cover} alt="coverimg" loading="lazy" />
+          </a>
+          <div className="imgCover"></div>
         </div>
-        <div className="content">
-          <h2>
-            <FontAwesomeIcon icon={faBook} /> {title}
-          </h2>
-          <div className="line"></div>
-          <p id="desc">{description}</p>
-          <p className="techUsed">
-            <span
-              style={{ color: code[0] === "JavaScript" ? "yellow" : "#129dc7" }}
-            >
-              <FontAwesomeIcon icon={faCircle} />
-            </span>
-            {code}
-          </p>
-          <div className="links">
-            <a href={repo} target="_blank" rel="noreferrer">
-              <p>Repository</p>
-            </a>
-            <a href={deploy} target="_blank" rel="noreferrer">
-              <p>Deployed Application</p>
-            </a>
-          </div>
+      </div>
+      <div className="content">
+        <h2>
+          <FontAwesomeIcon icon={faBook} /> {title}
+        </h2>
+        <div className="line"></div>
+        <p id="desc">{description}</p>
+        <p className="techUsed">
+          <span
+            style={{ color: code[0] === "JavaScript" ? "yellow" : "#129dc7" }}
+          >
+            <FontAwesomeIcon icon={faCircle} />
+          </span>
+          {code}
+        </p>
+        <div className="links">
+          <a href={repo} target="_blank" rel="noreferrer">
+            <p>Repository</p>
+          </a>
+          <a href={deploy} target="_blank" rel="noreferrer">
+            <p>Deployed Application</p>
+          </a>
         </div>
-      </StyledDiv>
-    </Hide>
+      </div>
+    </StyledDiv>
   );
 };
 
@@ -152,6 +150,7 @@ const StyledDiv = styled(motion.div)`
     }
   }
   @media (max-width: 1200px) {
+    box-shadow: 0px 0px 5px 3px blue;
     flex-direction: column;
     position: static;
     border-radius: 5px;
@@ -171,11 +170,12 @@ const StyledDiv = styled(motion.div)`
       align-items: flex-start;
       width: 100%;
       transform: translateX(0);
-      background: #202020;
+
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       #desc {
         padding: 0;
+        background: none;
       }
     }
   }
