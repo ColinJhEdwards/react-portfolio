@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ProjectData, minorProjectData } from "../util/data";
 import ProjectCard from "../components/ProjectCard";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animations";
+import { pageAnimation, fade } from "../animations";
 import MinorProjectCard from "../components/MinorProjectCard";
 
 const Projects = () => {
@@ -34,10 +34,10 @@ const Projects = () => {
             />
           ))}
         </motion.div>
-        <div className="title other">
+        <motion.div variants={fade} className="title other">
           <h2>Other Noteworthy Projects</h2>
           <hr width="60%" color="gray" />
-        </div>
+        </motion.div>
         <div className="minorProjects">
           {minorData.map((project) => (
             <MinorProjectCard

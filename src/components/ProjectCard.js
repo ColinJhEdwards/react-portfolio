@@ -73,7 +73,7 @@ const StyledDiv = styled(motion.div)`
       cursor: pointer;
     }
     .imgCover {
-      background: #010146b0;
+      background: linear-gradient(35deg, #1e209cb0, #000000da);
       position: absolute;
       top: 0;
       left: 0;
@@ -136,7 +136,7 @@ const StyledDiv = styled(motion.div)`
       border-radius: 5px;
       padding: 0.2rem 1rem;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-      background: #1517bd;
+      background: linear-gradient(35deg, #1517bd, #090a64);
       transition: ease all 0.5s;
       &:hover {
         background: #07097e;
