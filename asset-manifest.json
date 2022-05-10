@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.52daf913.chunk.js",
-    "main.js.map": "/static/js/main.52daf913.chunk.js.map",
+    "main.js": "/static/js/main.ed4dcddf.chunk.js",
+    "main.js.map": "/static/js/main.ed4dcddf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceae51e3.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceae51e3.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
     "static/js/2.9e994176.chunk.js.LICENSE.txt": "/static/js/2.9e994176.chunk.js.LICENSE.txt",
     "static/media/Colin.f3012cc9.JPG": "/static/media/Colin.f3012cc9.JPG",
-    "static/media/Edwards_Resume.c0d7b2e1.pdf": "/static/media/Edwards_Resume.c0d7b2e1.pdf",
+    "static/media/Edwards_Resume.dc9483a0.pdf": "/static/media/Edwards_Resume.dc9483a0.pdf",
     "static/media/about.730b7323.png": "/static/media/about.730b7323.png",
     "static/media/aperHome.ab15e5f2.png": "/static/media/aperHome.ab15e5f2.png",
     "static/media/aperMobile.9a72a235.png": "/static/media/aperMobile.9a72a235.png",
@@ -52,7 +52,7 @@
     "static/media/socksMobileHome.d2ed7fc7.png": "/static/media/socksMobileHome.d2ed7fc7.png",
     "static/media/socksMobileMarket.dfe459ab.png": "/static/media/socksMobileMarket.dfe459ab.png",
     "static/media/socksStocks.b2173d6f.png": "/static/media/socksStocks.b2173d6f.png",
-    "static/media/sweepHome.1394041c.png": "/static/media/sweepHome.1394041c.png",
+    "static/media/sweepHome.cebd3498.png": "/static/media/sweepHome.cebd3498.png",
     "static/media/sweepHomeDetail.65072f5d.png": "/static/media/sweepHomeDetail.65072f5d.png",
     "static/media/sweepHomeDetail2.1165fe4e.png": "/static/media/sweepHomeDetail2.1165fe4e.png",
     "static/media/sweepMobile1.9e37e5f6.png": "/static/media/sweepMobile1.9e37e5f6.png",
@@ -69,6 +69,6 @@
     "static/js/runtime-main.ceae51e3.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.9e994176.chunk.js",
-    "static/js/main.52daf913.chunk.js"
+    "static/js/main.ed4dcddf.chunk.js"
   ]
 }
