@@ -72,6 +72,7 @@ function GuitarDate() {
 const StyledDate = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   div {
     margin: 2rem 1rem;
     .timeel1 {

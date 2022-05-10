@@ -22,6 +22,7 @@ const Skills = () => {
               <h2>&#60;HTML5&#62;</h2>
               <h2>&#60;CSS&#62;</h2>
               <h2>&#60;JavaScript&#62;</h2>
+              <h2>&#60;Typescript&#62;</h2>
             </motion.div>
           </div>
         </Toggle>
@@ -41,7 +42,8 @@ const Skills = () => {
               <h2>&#60;Bootstrap&#62;</h2>
               <h2>&#60;node.js&#62;</h2>
               <h2>&#60;jQuery&#62;</h2>
-              <h2>&#60;MongoDB&#62;</h2>
+              <h2>&#60;mySQL&#62;</h2>
+              <h2>&#60;npm&#62;</h2>
               <h2>&#60;GIT&#62;</h2>
               <h2>&#60;Github&#62;</h2>
             </motion.div>
@@ -55,7 +57,7 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
               className="studying"
             >
-              <h2>&#60;Typescript&#62;</h2>
+              <h2>&#60;React&#62;</h2>
               <h2>&#60;Algorithms&#62;</h2>
               <h2>&#60;Test Driven Development&#62;</h2>
             </motion.div>

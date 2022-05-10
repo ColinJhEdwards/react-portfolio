@@ -54,7 +54,7 @@ const StyledDiv = styled(motion.div)`
     .image {
       transform: scale(1.2);
       .imgCover {
-        background: none;
+        opacity: 0;
       }
     }
   }
