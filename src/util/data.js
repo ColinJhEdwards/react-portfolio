@@ -80,51 +80,7 @@ export const ProjectData = () => {
       img: [yumHome],
     },
     {
-      id: 1,
-      title: "Inca Wheels",
-      Description:
-        "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
-      longDesc:
-        "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Started as a way to help raise funds for the nonprofit Ruta Verde that focuses on Sustainable Development projects including the building of Community Forests in North America and creating sustainable food solutions in Peru. The Inca were honorable people that valued their surrounding environments at the core of their belief systems, and we hope to honor this ideology by creating a business that focuses on caring for the planet, not just profits.",
-      code: [
-        "React ",
-        "- Google Maps API ",
-        "- bootstrap ",
-        "- framer motion ",
-        "- styled components",
-      ],
-      deploy: "https://www.incawheels.com/",
-      repo: "https://github.com/ColinJhEdwards/incawheels",
-      img: [incaHome, incaVan, incaDest],
-      mobileImg: [incaMobHome, incaMobileVan, incaMobileDest],
-    },
-    {
       id: 2,
-      title: "Murphy's Music School",
-      Description:
-        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels.",
-      longDesc:
-        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels. The school has paved a new pathway in the industry of music education by offering lessons from experienced musicians and incorporating a performance-based education approach. Meaning the curriculum focuses on learning music concepts and applying them in a live performance.",
-      code: [
-        "React ",
-        "- material ui ",
-        "- bootstrap ",
-        "- framer motion ",
-        "- styled components",
-      ],
-      deploy: "https://colinjhedwards.github.io/murphy-music-school/",
-      repo: "https://github.com/ColinJhEdwards/murphy-music-school",
-      img: [home, home1, home2, courses, teachers, contact1, contact2],
-      mobileImg: [
-        mobileHome,
-        mobileHome2,
-        mobileCourses,
-        mobileCourseDetail,
-        mobileTeachers,
-      ],
-    },
-    {
-      id: 3,
       title: "Sweep",
       Description:
         "Sweep is an online database of information related to movies. Users are able to browse a collection of movies including popular, top rated, and movies currently playing in theaters.",
@@ -149,6 +105,50 @@ export const ProjectData = () => {
         sweepSearchFail,
       ],
       mobileImg: [sweepMobile1, sweepMobile2],
+    },
+    {
+      id: 3,
+      title: "Inca Wheels",
+      Description:
+        "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Their mission is to bring affordable access to the wonderous outdoors the Pacific Northwest has to offer for generations to come.",
+      longDesc:
+        "Inca Wheels is an indigenous owned outdoor recreational vehicle rental company based in the Pacific Northwest. Started as a way to help raise funds for the nonprofit Ruta Verde that focuses on Sustainable Development projects including the building of Community Forests in North America and creating sustainable food solutions in Peru. The Inca were honorable people that valued their surrounding environments at the core of their belief systems, and we hope to honor this ideology by creating a business that focuses on caring for the planet, not just profits.",
+      code: [
+        "React ",
+        "- Google Maps API ",
+        "- bootstrap ",
+        "- framer motion ",
+        "- styled components",
+      ],
+      deploy: "https://www.incawheels.com/",
+      repo: "https://github.com/ColinJhEdwards/incawheels",
+      img: [incaHome, incaVan, incaDest],
+      mobileImg: [incaMobHome, incaMobileVan, incaMobileDest],
+    },
+    {
+      id: 4,
+      title: "Murphy's Music School",
+      Description:
+        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels.",
+      longDesc:
+        "Murphy's Music School's mission is to bring their community together through the joys of music by providing a quality music education to students of all ages and skill levels. The school has paved a new pathway in the industry of music education by offering lessons from experienced musicians and incorporating a performance-based education approach. Meaning the curriculum focuses on learning music concepts and applying them in a live performance.",
+      code: [
+        "React ",
+        "- material ui ",
+        "- bootstrap ",
+        "- framer motion ",
+        "- styled components",
+      ],
+      deploy: "https://colinjhedwards.github.io/murphy-music-school/",
+      repo: "https://github.com/ColinJhEdwards/murphy-music-school",
+      img: [home, home1, home2, courses, teachers, contact1, contact2],
+      mobileImg: [
+        mobileHome,
+        mobileHome2,
+        mobileCourses,
+        mobileCourseDetail,
+        mobileTeachers,
+      ],
     },
   ];
 };
