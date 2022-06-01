@@ -50,13 +50,6 @@ const Home = () => {
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a
-                href="https://www.instagram.com/colinseecolindo/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a
                 href="https://open.spotify.com/user/colinjhedwards"
                 target="_blank"
                 rel="noreferrer"
