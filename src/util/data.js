@@ -1,61 +1,27 @@
 // Sweep images
-import sweepHome from "../Images/projectImgs/sweepHome.png";
-import sweepHomeDetail from "../Images/projectImgs/sweepHomeDetail.png";
-import sweepHomeDetail2 from "../Images/projectImgs/sweepHomeDetail2.png";
-import sweepSearch from "../Images/projectImgs/sweepSearch.png";
-import sweepSearch2 from "../Images/projectImgs/sweepSearch2.png";
-import sweepSearchFail from "../Images/projectImgs/sweepSearchFail.png";
-import sweepMobile1 from "../Images/projectImgs/sweepMobile1.png";
-import sweepMobile2 from "../Images/projectImgs/sweepMobile2.png";
+import sweepHome from "../Images/projectImgs/Sweep/sweepHome.png";
+
 // Lee's reptile emporium images
-import leeBrowse from "../Images/projectImgs/leeBrowse.png";
-import leeCollection from "../Images/projectImgs/leeCollection.png";
-import leeHome from "../Images/projectImgs/leeHome.png";
-import leeMobileFrog from "../Images/projectImgs/leeMobileFrog.png";
-import leeMobileHome from "../Images/projectImgs/leeMobileHome.png";
-import leeReviews from "../Images/projectImgs/leeReviews.png";
+import leeHome from "../Images/projectImgs/LeeReptile/leeHome.png";
+
 //Socks Images
-import socksHome from "../Images/projectImgs/socksHome.png";
-import socksMarket from "../Images/projectImgs/socksMarket.png";
-import socksStocks from "../Images/projectImgs/socksStocks.png";
-import socksMobileHome from "../Images/projectImgs/socksMobileHome.png";
-import socksMobileMarket from "../Images/projectImgs/socksMobileMarket.png";
+import socksHome from "../Images/projectImgs/Socks/socksHome.png";
+
 //Todo for me images
-import todoHome from "../Images/projectImgs/todoHome.png";
-import todoMobile from "../Images/projectImgs/todoMobile.png";
+import todoHome from "../Images/projectImgs/Todo/todoHome.png";
+
 //photographer portfoilo
 import photoHome from "../Images/projectImgs/photographer/home.png";
-import photoAbout from "../Images/projectImgs/photographer/about.png";
-import photoGallery from "../Images/projectImgs/photographer/gallery.png";
-import photoContact from "../Images/projectImgs/photographer/contact.png";
-import photoMobHome from "../Images/projectImgs/photographer/mobileHome.png";
-import photoMobAbout from "../Images/projectImgs/photographer/mobileAbout.png";
-import photoMobGallery from "../Images/projectImgs/photographer/mobileGallery.png";
-import photoMobContact from "../Images/projectImgs/photographer/mobileContact.png";
+
 //Aperture
-import aperHome from "../Images/projectImgs/aperHome.png";
-import aperSearch from "../Images/projectImgs/aperSearch.png";
-import aperMobile from "../Images/projectImgs/aperMobile.png";
+import aperHome from "../Images/projectImgs/Aperture/aperHome.png";
+
 //Murphy's images
 import home from "../Images/projectImgs/Murphy/home.png";
-import home1 from "../Images/projectImgs/Murphy/homeDetail1.png";
-import home2 from "../Images/projectImgs/Murphy/homeDetail2.png";
-import courses from "../Images/projectImgs/Murphy/courses.png";
-import teachers from "../Images/projectImgs/Murphy/teachers.png";
-import contact1 from "../Images/projectImgs/Murphy/contact1.png";
-import contact2 from "../Images/projectImgs/Murphy/contact2.png";
-import mobileHome from "../Images/projectImgs/Murphy/mobileHome.png";
-import mobileHome2 from "../Images/projectImgs/Murphy/mobileHome2.png";
-import mobileCourses from "../Images/projectImgs/Murphy/mobileCourses.png";
-import mobileCourseDetail from "../Images/projectImgs/Murphy/mobileCourseDetail.png";
-import mobileTeachers from "../Images/projectImgs/Murphy/mobileTeachers.png";
+
 // Inca images
 import incaHome from "../Images/projectImgs/Inca/home.png";
-import incaVan from "../Images/projectImgs/Inca/theVan.png";
-import incaDest from "../Images/projectImgs/Inca/destinations.png";
-import incaMobHome from "../Images/projectImgs/Inca/mobileHome.png";
-import incaMobileVan from "../Images/projectImgs/Inca/mobileVan.png";
-import incaMobileDest from "../Images/projectImgs/Inca/mobileDestination.png";
+
 // Yumtum Images
 import yumHome from "../Images/projectImgs/yumtum/yumHome.png";
 
@@ -96,15 +62,7 @@ export const ProjectData = () => {
       ],
       deploy: "https://colinjhedwards.github.io/Sweep/",
       repo: "https://github.com/ColinJhEdwards/Sweep",
-      img: [
-        sweepHome,
-        sweepHomeDetail,
-        sweepHomeDetail2,
-        sweepSearch,
-        sweepSearch2,
-        sweepSearchFail,
-      ],
-      mobileImg: [sweepMobile1, sweepMobile2],
+      img: [sweepHome],
     },
     {
       id: 3,
@@ -122,8 +80,7 @@ export const ProjectData = () => {
       ],
       deploy: "https://www.incawheels.com/",
       repo: "https://github.com/ColinJhEdwards/incawheels",
-      img: [incaHome, incaVan, incaDest],
-      mobileImg: [incaMobHome, incaMobileVan, incaMobileDest],
+      img: [incaHome],
     },
     {
       id: 4,
@@ -141,14 +98,7 @@ export const ProjectData = () => {
       ],
       deploy: "https://colinjhedwards.github.io/murphy-music-school/",
       repo: "https://github.com/ColinJhEdwards/murphy-music-school",
-      img: [home, home1, home2, courses, teachers, contact1, contact2],
-      mobileImg: [
-        mobileHome,
-        mobileHome2,
-        mobileCourses,
-        mobileCourseDetail,
-        mobileTeachers,
-      ],
+      img: [home],
     },
   ];
 };
@@ -171,8 +121,7 @@ export const minorProjectData = () => {
       ],
       deploy: "https://socks-stocks.herokuapp.com/",
       repo: "https://github.com/ashley-ag/Socks",
-      img: [socksHome, socksMarket, socksStocks],
-      mobileImg: [socksMobileHome, socksMobileMarket],
+      img: [socksHome],
     },
     {
       id: 2,
@@ -183,8 +132,7 @@ export const minorProjectData = () => {
       code: ["JavaScript", " - MySQL ", "- express", "- handlebars"],
       deploy: "https://lees-reptile-emporium.herokuapp.com/",
       repo: "https://github.com/mlcohan/LeesReptileEmporium",
-      img: [leeHome, leeBrowse, leeCollection, leeReviews],
-      mobileImg: [leeMobileHome, leeMobileFrog],
+      img: [leeHome],
     },
     {
       id: 3,
@@ -197,7 +145,6 @@ export const minorProjectData = () => {
       deploy: "https://colinjhedwards.github.io/todoforme/",
       repo: "https://github.com/ColinJhEdwards/todoforme",
       img: [todoHome],
-      mobileImg: [todoMobile],
     },
 
     {
@@ -210,13 +157,7 @@ export const minorProjectData = () => {
       code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/photographer-portfolio/",
       repo: "https://github.com/ColinJhEdwards/photographer-portfolio",
-      img: [photoHome, photoAbout, photoGallery, photoContact],
-      mobileImg: [
-        photoMobHome,
-        photoMobAbout,
-        photoMobGallery,
-        photoMobContact,
-      ],
+      img: [photoHome],
     },
     {
       id: 5,
@@ -228,8 +169,7 @@ export const minorProjectData = () => {
       code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/Aperture/",
       repo: "https://github.com/ColinJhEdwards/Aperture",
-      img: [aperHome, aperSearch],
-      mobileImg: [aperMobile],
+      img: [aperHome],
     },
   ];
 };
