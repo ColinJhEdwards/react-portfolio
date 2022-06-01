@@ -59,7 +59,8 @@ const Skills = () => {
             >
               <h2>&#60;React&#62;</h2>
               <h2>&#60;Algorithms&#62;</h2>
-              <h2>&#60;Test Driven Development&#62;</h2>
+              <h2>&#60;Unit Testing&#62;</h2>
+              <h2>&#60;Integration Testing&#62;</h2>
             </motion.div>
           </div>
         </Toggle>

@@ -13,10 +13,7 @@ const OtherSkills = () => {
           </div>
           <div className="text">
             <h2>Guitarist</h2>
-            <p>
-              I am addicted to my guitar and studying music theory, check out my
-              videos below!
-            </p>
+            <p>When I'm not coding you can find me playing my guitar.</p>
           </div>
         </div>
 

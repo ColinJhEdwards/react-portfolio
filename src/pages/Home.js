@@ -73,9 +73,9 @@ const Home = () => {
       <StyledOtherSkills className="otherSkills">
         <OtherSkills />
       </StyledOtherSkills>
-      <StyledAbout className="about">
+      {/* <StyledAbout className="about">
         <AboutMe />
-      </StyledAbout>
+      </StyledAbout> */}
     </>
   );
 };
