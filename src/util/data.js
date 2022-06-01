@@ -56,9 +56,29 @@ import incaDest from "../Images/projectImgs/Inca/destinations.png";
 import incaMobHome from "../Images/projectImgs/Inca/mobileHome.png";
 import incaMobileVan from "../Images/projectImgs/Inca/mobileVan.png";
 import incaMobileDest from "../Images/projectImgs/Inca/mobileDestination.png";
+// Yumtum Images
+import yumHome from "../Images/projectImgs/yumtum/yumHome.png";
 
 export const ProjectData = () => {
   return [
+    {
+      id: 1,
+      title: "Yumtum",
+      Description:
+        "Yumtum is a web application full of food recipes that users can browse through, including vegetarian and vegan options. Users are also able to search for recipes.",
+      longDesc:
+        "Yumtum, short for Yummy in my Tummy, has the tastiest of recipes users can browse through. Users are able to browse a collection of recipes including vegetarian, vegan, and multiple cuisines such as American, Chinese, French, and more! Users are also able to search for specific recipes and view detailed instructions for selected recipes.",
+      code: [
+        "React ",
+        "- TypeScript ",
+        "- React Router Dom ",
+        "- framer motion ",
+        "- styled components",
+      ],
+      deploy: "https://colinjhedwards.github.io/yumtum/#/",
+      repo: "https://github.com/ColinJhEdwards/yumtum",
+      img: [yumHome],
+    },
     {
       id: 1,
       title: "Inca Wheels",

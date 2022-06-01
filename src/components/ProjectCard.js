@@ -52,7 +52,6 @@ const StyledDiv = styled(motion.div)`
   position: relative;
   &:hover {
     .image {
-      transform: scale(1.2);
       .imgCover {
         opacity: 0;
       }
