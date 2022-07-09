@@ -107,9 +107,9 @@ export const minorProjectData = () => {
   return [
     {
       id: 7,
-      title: "Algorithm and Data Structure Notes (WIP)",
+      title: "Big-O Notes (WIP)",
       Description:
-        "Notes I've taken to help understand algorithms, data structures, and Big O Notation.",
+        "Notes I've taken to help understand algorithms, data structures and Big-O Notation.",
       code: ["TypeScript "],
       deploy: "https://github.com/ColinJhEdwards/algo-data-notes",
       repo: "https://github.com/ColinJhEdwards/algo-data-notes",
