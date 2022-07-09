@@ -30,7 +30,7 @@ const Home = () => {
               Creative <span>Front-End Developer</span> with a certificate in
               Fullstack Web Development from the University of Washington Coding
               Bootcamp. Passionate about Front-End Development, design, and
-              music. Currently seeking a Junior Front-End Developer position.
+              music. Currently seeking a Front-End Developer position.
             </motion.h2>
           </Hide>
           <Hide>
