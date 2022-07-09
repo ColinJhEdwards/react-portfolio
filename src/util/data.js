@@ -106,12 +106,30 @@ export const ProjectData = () => {
 export const minorProjectData = () => {
   return [
     {
-      id: 1,
+      id: 7,
+      title: "Algorithm and Data Structure Notes (WIP)",
+      Description:
+        "Notes I've taken to help understand algorithms, data structures, and Big O Notation.",
+      code: ["TypeScript "],
+      deploy: "https://github.com/ColinJhEdwards/algo-data-notes",
+      repo: "https://github.com/ColinJhEdwards/algo-data-notes",
+      img: [],
+    },
+    {
+      id: 6,
+      title: "Beatmaker",
+      Description:
+        "A simple beatmaker built with object oriented programming in mind.",
+      code: ["JavaScript "],
+      deploy: "https://colinjhedwards.github.io/beatmaker/",
+      repo: "https://github.com/ColinJhEdwards/beatmaker",
+      img: [],
+    },
+    {
+      id: 5,
       title: "Socks",
       Description:
         "Socks is a web-based application that allows users to save and view their current stock units.",
-      longDesc:
-        "Socks is a web-based application that allows a user to sign into their account, log their current stock units and cryptocurrency shares. Socks is a great choice for new and experienced investors alike. With an auto-populating, personalized dashboard showing infographics depicting the current value of your personalized market standings, this app brings simple viewings to your ever-so complicated investment portfolio. With a combination of rise in diversity of the stock trading market and an overall leaning preference to keep track of financial data in an easy-to-use application on your smart phone, Socks has never come at a better time. At Socks, our promise to raise the bar on UI will give anyone the opportunity to understand where their investments land at just one glance. Create an account and start logging to find out for yourself!",
       code: [
         "React ",
         "- Firebase ",
@@ -124,7 +142,7 @@ export const minorProjectData = () => {
       img: [socksHome],
     },
     {
-      id: 2,
+      id: 4,
       title: "Lee's Reptile Emporium",
       Description:
         "Lee's Reptile Emporium is your one stop online shop for new reptilian pets.",
@@ -139,8 +157,6 @@ export const minorProjectData = () => {
       title: "ToDo For Me",
       Description:
         "A simple todo list for creating a list of items you must complete with functioning local storage",
-      longDesc:
-        "A simple todo list for creating a list of items you must complete with functioning local storage",
       code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/todoforme/",
       repo: "https://github.com/ColinJhEdwards/todoforme",
@@ -148,11 +164,9 @@ export const minorProjectData = () => {
     },
 
     {
-      id: 4,
+      id: 2,
       title: "Photographer Portfolio",
       Description:
-        "A basic template for a professional photographers personal portfolio.",
-      longDesc:
         "A basic template for a professional photographers personal portfolio.",
       code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/photographer-portfolio/",
@@ -160,12 +174,10 @@ export const minorProjectData = () => {
       img: [photoHome],
     },
     {
-      id: 5,
+      id: 1,
       title: "Aperture",
       Description:
         "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects.",
-      longDesc:
-        "Aperture provides free stock photos that users can search through and use for personal projects, allowing them to create stunning designs and projects. All photos are pulled from pexels api which supplies hundreds of thousands free stock photos. Vists Pexels website to contribue your photos!",
       code: ["JavaScript"],
       deploy: "https://colinjhedwards.github.io/Aperture/",
       repo: "https://github.com/ColinJhEdwards/Aperture",
